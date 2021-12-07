@@ -1,0 +1,50 @@
+﻿<Window x:Class="MMBServer.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMBServer"
+        mc:Ignorable="d"
+        Title="Einstellungen" Height="400" Width="400">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Margin="15" Grid.ColumnSpan="2" Source="C:\Users\DennisSteuer\Desktop\BKS_20080\MMBServer\media\MMBLogo.png" />
+        <StackPanel Grid.Row="1">
+            <Label>Serveradresse:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XMLServerAdress" ></TextBox>
+
+            <Label>Port:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XMLServerPort" ></TextBox>
+
+            <Label>XML Version:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XMLVersion" ></TextBox>
+
+            <Label>User ID:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_UserID" ></TextBox>
+
+            <Label>ProduktionsId:</Label>
+            <TextBox IsReadOnly="True" Margin="20 0 20 0" x:Name="_ProductionID" ></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label>X-Wert:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XValue" ></TextBox>
+            <Label>Kommunikations-User::</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_KommunikationsUser" ></TextBox>
+            <Label>Kommunikations-User-Passwort:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_KommunikationsUserPassword"></TextBox>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="10" Width="100" x:Name="_resetPwd" Click="_resetPwd_Click">Password ändern</Button>
+            <Button Margin="10" Width="100" x:Name="_btn_abort" Click="_btn_abort_Click">Abbrechen</Button>
+            <Button Margin="10" Width="100" x:Name="_btn_submit" Click="_btn_submit_Click">OK</Button>
+        </StackPanel>
+    </Grid>
+</Window>

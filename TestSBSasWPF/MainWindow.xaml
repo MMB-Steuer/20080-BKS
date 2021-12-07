@@ -1,0 +1,46 @@
+﻿<Window x:Class="TestSBSasWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TestSBSasWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="490" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120" />
+            <RowDefinition Height="30" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="180" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Grid.ColumnSpan="2" HorizontalAlignment="Center" Source="/media/MMBLogo.png" />
+        <Label Grid.Row="1" HorizontalAlignment="Center" Grid.ColumnSpan="3" FontFamily="Arial Black"> SBS Simulator</Label>
+        
+        <!-- Linke Seite -->
+        <StackPanel Grid.Row="2" Background="AliceBlue">
+            <Label>Server Adresse:</Label>
+            <TextBox x:Name="_serverAddr" Margin="15 0 10 0 " TextChanged="_serverAddr_TextChanged" ></TextBox>
+            <Label>Server Port:</Label>
+            <TextBox x:Name="_serverPort" Margin="15 0 10 0 " TextChanged="_serverPort_TextChanged"></TextBox>
+            <Label>UID:</Label>
+            <TextBox x:Name="_uid" Margin="15 0 10 0 " TextChanged="_uid_TextChanged"></TextBox>
+            <Label>Count:</Label>
+            <TextBox IsEnabled="False" Background="LightGray" x:Name="_count" Margin="15 0 10 0 " TextChanged="_count_TextChanged"></TextBox>
+            <Label>Personal Nummer:</Label>
+            <TextBox x:Name="_personnumber" Margin="15 0 10 0 " TextChanged="_personnumber_TextChanged"></TextBox>
+            <Label>Personal Password:</Label>
+            <TextBox x:Name="_personalPassword" Margin="15 0 10 0 " TextChanged="_personalPassword_TextChanged"></TextBox>
+            <Label />
+            <Grid Margin="0 5 10 0">
+                <Button x:Name="_btnServerStart" Click="_btnServerStart_Click" Width="150">Start</Button>
+                <Button x:Name="_btnServerStop" Click="_btnServerStop_Click" Width="150" Visibility="Hidden">Stop</Button>
+            </Grid>
+        </StackPanel>
+        <DataGrid x:Name="_DataGrid" Grid.Row="2" Grid.Column="1"
+                  ItemsSource="{Binding Source=list}"
+                  ></DataGrid>
+    </Grid>
+</Window>

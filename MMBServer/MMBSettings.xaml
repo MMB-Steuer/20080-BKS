@@ -1,0 +1,88 @@
+﻿<Window x:Class="MMBServer.MMBSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMBServer"
+        mc:Ignorable="d"
+        Title="MMBSettings" Height="460" Width="700">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Margin="15" Grid.ColumnSpan="3" Source="C:\Users\DennisSteuer\Desktop\BKS_20080\MMBServer\media\MMBLogo.png" />
+        <StackPanel Grid.Row="1">
+            <Label>Serveradresse:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XMLServerAdress" ></TextBox>
+
+            <Label>Port:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XMLServerPort" ></TextBox>
+
+            <Label>XML Version:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XMLVersion" ></TextBox>
+
+            <Label>User ID:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_UserID" ></TextBox>
+
+            <Label>ProduktionsId:</Label>
+            <TextBox Foreground="Gray" IsReadOnly="True" Margin="20 0 20 0" x:Name="_ProductionID" ></TextBox>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="1">
+            <Label>X-Wert:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_XValue" ></TextBox>
+
+            <Label>Kommunikations-User::</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_KommunikationsUser" ></TextBox>
+
+            <Label>Kommunikations-User-Passwort:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_KommunikationsUserPassword" ></TextBox>
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Grid.Column="2">
+            <StackPanel Orientation="Horizontal">
+                <Label>Develope Mode:</Label>
+                <CheckBox x:Name="_DevelopeMode" Click="_DevelopeMode_Click" Margin="5 6 0 0" />
+                <!--
+                <Button Margin="15 2 0 2 " Width="70" x:Name="_BTNLogs" Click="_BTNLogs_Click">Logs</Button>
+                -->
+            </StackPanel>
+
+            <Label>TCP-Server-Host-Adresse:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_tcpServerAdress" ></TextBox>
+
+            <Label>TCP-Server-Host-Port:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_tcpServerPort" ></TextBox>
+
+
+            <Label>ODBC DSN:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_odbcDSN" ></TextBox>
+
+            <StackPanel Orientation="Horizontal">
+                <Label>Credentials benötig:</Label>
+                <CheckBox x:Name="_ODBCCredentialsRequired" Click="_ODBCCredentialsRequired_Click" Margin="5 6 0 0" />
+            </StackPanel>
+
+            <Label x:Name="_label_odbcUser">ODBC User:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_odbcUser" ></TextBox>
+
+            <Label x:Name="_label_odbcPwd">ODBC Password:</Label>
+            <TextBox Margin="20 0 20 0" x:Name="_odbcPwd" ></TextBox>
+
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="10" Width="150" x:Name="_BTN_SettingsPwdChange" Click="_BTN_SettingsPwdChange_Click">BKS Passwort ändern</Button>
+            <Button Margin="10" Width="150" x:Name="_BTN_changeMMBPwd" Click="_BTN_changeMMBPwd_Click">MMB Passwort ändern</Button>
+            <Button Margin="10" Width="100" x:Name="_BTN_abort" Click="_BTN_abort_Click">Abbrechen</Button>
+            <Button Margin="10" Width="100" x:Name="_BTN_submit" Click="_BTN_submit_Click">OK</Button>
+        </StackPanel>
+    </Grid>
+</Window>

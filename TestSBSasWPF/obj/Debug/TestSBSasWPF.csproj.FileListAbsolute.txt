@@ -1,0 +1,16 @@
+C:\MMB\BKS_20080\TestSBSasWPF\bin\Debug\TestSBSasWPF.exe.config
+C:\MMB\BKS_20080\TestSBSasWPF\bin\Debug\TestSBSasWPF.exe
+C:\MMB\BKS_20080\TestSBSasWPF\bin\Debug\TestSBSasWPF.pdb
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.csproj.AssemblyReference.cache
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.csproj.SuggestedBindingRedirects.cache
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\MainWindow.g.cs
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\App.g.cs
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF_MarkupCompile.cache
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF_MarkupCompile.lref
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\MainWindow.baml
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.g.resources
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.Properties.Resources.resources
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.csproj.GenerateResource.cache
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.csproj.CoreCompileInputs.cache
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.exe
+C:\MMB\BKS_20080\TestSBSasWPF\obj\Debug\TestSBSasWPF.pdb

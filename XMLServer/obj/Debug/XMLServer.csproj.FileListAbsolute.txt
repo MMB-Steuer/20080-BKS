@@ -1,0 +1,8 @@
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\obj\Debug\XMLServer.csproj.AssemblyReference.cache
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\obj\Debug\XMLServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\obj\Debug\XMLServer.csproj.CoreCompileInputs.cache
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\bin\Debug\XMLServer.exe.config
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\bin\Debug\XMLServer.exe
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\bin\Debug\XMLServer.pdb
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\obj\Debug\XMLServer.exe
+C:\Users\DennisSteuer\Desktop\BKS_20080\XMLServer\obj\Debug\XMLServer.pdb

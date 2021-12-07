@@ -1,0 +1,30 @@
+﻿<Window x:Class="MMBServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MMBServer"
+        mc:Ignorable="d"
+        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="MainWindow" Height="155" Width="300">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Grid.Column="0" Margin="15" Grid.ColumnSpan="2" Source="\media\MMBLogo.png" />
+
+        <StackPanel Grid.Row="1" >
+            <Button Margin="2"  x:Name="_btnServerStart" Click="_btnServerStart_Click"  Visibility="Visible" >Server Starten</Button>
+            <Button Margin="2"  x:Name="_btnServerStop" Click="_btnServerStop_Click" Visibility="Hidden">Server Stopen</Button>
+        </StackPanel >
+        <StackPanel Grid.Row="2" Grid.Column="1" >
+            <Button Margin="2" x:Name="_btnMMB" Click="_btnMMB_Click" Visibility="Visible">MMB Wartung</Button>
+            <Button Margin="2" x:Name="_btnOption" Click="_btnOption_Click">Einstellungen</Button>
+        </StackPanel>
+    </Grid>
+</Window>
