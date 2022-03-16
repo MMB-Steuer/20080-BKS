@@ -167,42 +167,40 @@ namespace MMBServer
             _config = MMBConfig.getInstance();
             try
             {
+                // Socket Instance öffnen
                 socket = SocketClient.getInstance();
                 socket.initCon(_config.XMLServerAdress, _config.XMLSeverPort.ToString());
+                
+                //Manufactoring Data Request
                 ManufactoringDataRequest x = new ManufactoringDataRequest();
                 x.UID = int.Parse(UID);
+                
+                // Manufactoring Request in XML Wandeln
                 XmlDocument request = x.toXML();
                 byte[] requestdata = Encoding.Default.GetBytes(request.OuterXml);
+                    
+                //Request an BKS Server senden
                 string responseString = socket.sendMessage(requestdata);
                 XmlDocument resXml = new XmlDocument();
+
+                // Response XML Generieren und laden
                 resXml.LoadXml(responseString);
+
+                // JObListe
                 List<ManufactoringJob> list = ManufactoringJob.convertFromManufactoringData(resXml);
+
+                // Wenn die Antwort ein Fehler ist
                 if (resXml.SelectSingleNode("Root/Telegram").Attributes["Name"].Value == "Error")
                 {
                     isOk = false;
                 }
 
+                // Jeden Job im XML durch itterieren
                 foreach (ManufactoringJob j in list)
                 {
-
-                    try
-                    {
-                        Console.WriteLine("Job Created");
-                        try
-                        {
-                            j.save();
-                            socket.sendMessage(Encoding.Default.GetBytes(j.DeleteTelegram().OuterXml));
-                        }
-                        catch (Exception ex)
-                        {
-                        }
-
-                    }
-                    catch (Exception ex)
-                    {
-
-                    }
-
+                    j.save();       
+                     // Job in Datanbank schreiben
+                    socket.sendMessage(Encoding.Default.GetBytes(j.DeleteTelegram().OuterXml)); // Delete Telegramm versenden
                 }
                 isOk = true;
             }

@@ -28,7 +28,7 @@ namespace MMBServer
             
 
         }
-
+        // Socket Server Starten
         private void startSocketServer()
         {
             if (this.__socketServer == null)
@@ -36,6 +36,7 @@ namespace MMBServer
             this.__socketServer.Start();
             this.checkServerStatus();
         }
+        // Server Status prüfen
         private void checkServerStatus()
         {
             if(socketServerStateIsActive())
@@ -100,6 +101,11 @@ namespace MMBServer
             this.__socketServer.Abort();
             this.__socketServer = null;
             this.checkServerStatus();
+        }
+
+        private void _btnManualXML_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

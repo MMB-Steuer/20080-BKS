@@ -67,7 +67,7 @@ namespace MMBServer
                 new XElement("UserID", _mashineUserID),
                 new XElement("SAP_Workplace", "XXX"),
                 new XElement("PersonnelNumber", _personelNumber),
-                new XElement("dsc", this.UID),
+                (this.UID.ToString().Length < 4 ?  new XElement("dsc", this.UID) : new XElement("BoardNr", this.UID)),
                 new XElement("ProductionKey", _productionKey)
                     )));
             var xmlDocument = new XmlDocument();
@@ -394,6 +394,7 @@ namespace MMBServer
     }
     public class ManufactoringJob
     {
+        // interne ID
         private int? iD = null;
         private int? uID = null;
         private string reference = null;
@@ -401,7 +402,6 @@ namespace MMBServer
         private string cyclNumber = null;
         private string dsc = null;
         private int? qty = null;
-        private int? tID = null;
         private string keyNumber = null;
         private string keyDescription = null;
         private string keyBlank = null;
@@ -412,9 +412,11 @@ namespace MMBServer
         private DateTime? jobCompletedDate = null;
         private DateTime? jobStartDate = null;
         private DateTime? jobFinishDate = null;
-        private int? Quantity = null;
+        private int? quantity = null;
         private string statusCode = null;
         private int? qtyWork = null;
+        private int? bLA = null;
+        private int? bLB = null;
 
         public int? ID { get => iD; set => iD = value; }
         public int? UID { get => uID; set => uID = value; }
@@ -423,10 +425,6 @@ namespace MMBServer
         public string CyclNumber { get => cyclNumber; set => cyclNumber = value; }
         public string Dsc { get => dsc; set => dsc = value; }
         public int? Qty { get => qty; set => qty = value; }
-        public int? TID { get => tID; set => tID = value; }
-        public string KeyNumber { get => keyNumber; set => keyNumber = value; }
-        public string KeyDescription { get => keyDescription; set => keyDescription = value; }
-        public string KeyBlank { get => keyBlank; set => keyBlank = value; }
         public string Error { get => error; set => error = value; }
         public int? Running { get => running; set => running = value; }
         public string CustomerInfo { get => customerInfo; set => customerInfo = value; }
@@ -434,9 +432,10 @@ namespace MMBServer
         public DateTime? JobCompletedDate { get => jobCompletedDate; set => jobCompletedDate = value; }
         public DateTime? JobStartDate { get => jobStartDate; set => jobStartDate = value; }
         public DateTime? JobFinishDate { get => jobFinishDate; set => jobFinishDate = value; }
-        public int? Quantity1 { get => Quantity; set => Quantity = value; }
+        public int? Quantity { get => quantity; set => quantity = value; }
         public string StatusCode { get => statusCode; set => statusCode = value; }
-        public int? QtyWork { get => qtyWork; set => qtyWork = value; }
+        public int? BLA { get => bLA; set => bLA = value; }
+        public int? BLB { get => bLB; set => bLB = value; }
 
         #region XML Generation
         public XmlDocument DeleteTelegram()
@@ -619,14 +618,15 @@ namespace MMBServer
 
 
             // Quantity of key in the job wich were produced
-            XmlNode QtyWorkNode = xml.CreateElement("QtyWork");
+            //NOTE: Removed
+            /*XmlNode QtyWorkNode = xml.CreateElement("QtyWork");
             if (this.QtyWork != null)
             {
                 QtyWorkNode.InnerText = this.QtyWork.ToString();
             }
             StatusNode.AppendChild(QtyWorkNode);
             LogService.getInstance().create(LogService._INFORMATION, "Create Receipt", xml.OuterXml.ToString());
-
+            */ 
             return xml;
         }
         public static List<ManufactoringJob> convertFromManufactoringData(XmlDocument xml)
@@ -634,26 +634,33 @@ namespace MMBServer
             List<ManufactoringJob> list = new List<ManufactoringJob>();
             XmlNodeList nodeList = xml.DocumentElement.SelectNodes("/Root/Telegram/Job");
             string UID = "", Reference = "", SystemNum = "", CylNumber = "", Dsc = "";
-            int CylNumer = 0, Qty = 0, Quantity = 0;
+            int CylNumer = 0, Qty = 0, Quantity = 0, BLA = 0, BLB = 0;
             DateTime JobCreationDate = DateTime.Now;
             string res = "";
             foreach (XmlNode node in nodeList)
             {
+                // Attribute auslesen
                 UID = node.SelectSingleNode("UID").InnerText;
                 Reference = node.SelectSingleNode("Reference").InnerText;
-                SystemNum = node.SelectSingleNode("SystemNum").InnerText;
                 SystemNum = node.SelectSingleNode("SystemNum").InnerText;
                 CylNumber = node.SelectSingleNode("CylNumber").InnerText;
                 Dsc = node.SelectSingleNode("Dsc").InnerText;
                 Qty = Int32.Parse(node.SelectSingleNode("Qty").InnerText);
                 Quantity = Int32.Parse(node.SelectSingleNode("Qty").InnerText);
-                res += " UID: " + UID +
-                     " Reference: " + Reference +
-                     " SystemNum: " + SystemNum +
-                     " CylNumber: " + CylNumber +
-                     " Dsc: " + Dsc +
-                     " Qty: " + Qty;
+
+                // BLA BLB Nodes
+                // Length Values auslesen
+                XmlNode specs = node.SelectSingleNode("CylinderSpec");
+                foreach (XmlNode node2 in specs)
+                {
+                    if (node2.Name == "Length" && node2.Attributes["Length"] != null) {
+                        if (node2.Attributes["Length"].Value == "1") BLA = int.Parse(node2.InnerText);
+                        if (node2.Attributes["Length"].Value == "2") BLB = int.Parse(node2.InnerText);
+                    }
+                }
+
                 ManufactoringJob item = new ManufactoringJob();
+                // Attribute in item schreiben
                 item.UID = Int32.Parse(UID);
                 item.Reference = Reference;
                 item.SystemNum = SystemNum;
@@ -716,26 +723,7 @@ namespace MMBServer
                     j.Qty = dbreader.GetInt32(dbreader.GetOrdinal("Qty"));
                 }
                 catch (Exception Ex) { }
-                try
-                {
-                    j.TID = dbreader.GetInt32(dbreader.GetOrdinal("TID"));
-                }
-                catch (Exception Ex) { }
-                try
-                {
-                    j.KeyNumber = dbreader.GetString(dbreader.GetOrdinal("KeyNumber"));
-                }
-                catch (Exception Ex) { }
-                try
-                {
-                    j.KeyDescription = dbreader.GetString(dbreader.GetOrdinal("KeyDescription"));
-                }
-                catch (Exception Ex) { }
-                try
-                {
-                    j.KeyBlank = dbreader.GetString(dbreader.GetOrdinal("KeyBlank"));
-                }
-                catch (Exception Ex) { }
+
                 try
                 {
                     j.Error = dbreader.GetString(dbreader.GetOrdinal("Error"));
@@ -781,11 +769,7 @@ namespace MMBServer
                     j.StatusCode = dbreader.GetString(dbreader.GetOrdinal("StatusCode"));
                 }
                 catch (Exception Ex) { }
-                try
-                {
-                    j.QtyWork = dbreader.GetInt32(dbreader.GetOrdinal("QtyWork"));
-                }
-                catch (Exception Ex) { }
+
                 list.Add(j);
             }
 
@@ -870,42 +854,7 @@ namespace MMBServer
             {
                 cmd += "QtyWork = null, ";
             }
-            //Update TID
-            if (this.TID != null)
-            {
-                cmd += "TID = " + this.TID + " , ";
-            }
-            else
-            {
-                cmd += "TID = " + this.TID + " , ";
-            }
-            //Update KeyNumber
-            if (this.KeyNumber != null)
-            {
-                cmd += "KeyNumber = '" + this.KeyNumber.Trim() + "' , ";
-            }
-            else
-            {
-                cmd += "KeyNumber = null, ";
-            }
-            //Update KeyDescription
-            if (this.KeyDescription != null)
-            {
-                cmd += "KeyDescription = '" + this.KeyDescription.Trim() + "' , ";
-            }
-            else
-            {
-                cmd += "KeyDescription = null, ";
-            }
-            //Update KeyBlank
-            if (this.KeyBlank != null)
-            {
-                cmd += "KeyBlank = '" + this.KeyBlank.Trim() + "' , ";
-            }
-            else
-            {
-                cmd += "KeyBlank = null, ";
-            }
+
             //Update Error
             if (this.Error != null)
             {
@@ -988,14 +937,7 @@ namespace MMBServer
                 cmd += "StatusCode = null, ";
             }
             //Update QtyWork
-            if (this.QtyWork != null)
-            {
-                cmd += "QtyWork = " + this.QtyWork + " ";
-            }
-            else
-            {
-                cmd += "QtyWork = null ";
-            }
+            
             cmd += " WHERE ID = " + this.ID;
             con.ExecuteNonQuery(cmd);
             con.dispose();
@@ -1012,7 +954,7 @@ namespace MMBServer
             string cmd = "Insert Jobs (UID, Reference,SystemNum," +
                 "CyclNumber,Dsc,Qty,TID,KeyNumber,KeyDescription,KeyBlank," +
                 "Error,Running,CustomerInfo,JobCreationDate,JobCompletedDate," +
-                "JobStartDate,JobFinishDate,Quantity,StatusCode,QtyWork) VALUES (";
+                "JobStartDate,JobFinishDate,Quantity,StatusCode,QtyWork, BLA, BLB) VALUES (";
 
             if (this.UID != null)
             {
@@ -1067,42 +1009,7 @@ namespace MMBServer
             {
                 cmd += "null, ";
             }
-            //Update TID
-            if (this.TID != null)
-            {
-                cmd += "" + this.TID + " , ";
-            }
-            else
-            {
-                cmd += "null, ";
-            }
-            //Update KeyNumber
-            if (this.KeyNumber != null)
-            {
-                cmd += "'" + this.KeyNumber.Trim() + "' , ";
-            }
-            else
-            {
-                cmd += "null, ";
-            }
-            //Update KeyDescription
-            if (this.KeyDescription != null)
-            {
-                cmd += "'" + this.KeyDescription.Trim() + "' , ";
-            }
-            else
-            {
-                cmd += "null, ";
-            }
-            //Update KeyBlank
-            if (this.KeyBlank != null)
-            {
-                cmd += "'" + this.KeyBlank.Trim() + "' , ";
-            }
-            else
-            {
-                cmd += "null, ";
-            }
+
             //Update Error
             if (this.Error != null)
             {
@@ -1184,14 +1091,23 @@ namespace MMBServer
             {
                 cmd += "null, ";
             }
-            //Update QtyWork
-            if (this.QtyWork != null)
+            // BLA
+            if (this.BLA != null)
             {
-                cmd += "" + this.QtyWork + " ";
+                cmd += "'" + this.BLA + "' , ";
             }
             else
             {
-                cmd += "null ";
+                cmd += "null, ";
+            }
+            //BLB
+            if (this.BLB != null)
+            {
+                cmd += "'" + this.BLB + "' , ";
+            }
+            else
+            {
+                cmd += "null, ";
             }
             cmd += ");";
             con.ExecuteNonQuery(cmd);

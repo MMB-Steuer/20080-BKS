@@ -24,7 +24,8 @@
         </StackPanel >
         <StackPanel Grid.Row="2" Grid.Column="1" >
             <Button Margin="2" x:Name="_btnMMB" Click="_btnMMB_Click" Visibility="Visible">MMB Wartung</Button>
-            <Button Margin="2" x:Name="_btnOption" Click="_btnOption_Click">Einstellungen</Button>
+            <!-- <Button Margin="2" x:Name="_btnOption" Click="_btnOption_Click">Einstellungen</Button> -->
+            <Button Margin="2" x:Name="_btnManualXML" Click="_btnManualXML_Click">MXMLI</Button>
         </StackPanel>
     </Grid>
 </Window>
