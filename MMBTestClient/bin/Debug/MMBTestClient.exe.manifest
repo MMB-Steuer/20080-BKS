@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBTestClient.exe" size="9176">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBTestClient.exe" size="8664">
       <assemblyIdentity name="MMBTestClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OKnNLmLasg1dm4LUSYqrea478TgkHPkeYqVzOGRPkTs=</dsig:DigestValue>
+        <dsig:DigestValue>/cPITRFPL65F6nuygsYwjVEw/na35zUlvhFoXx1LF/U=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

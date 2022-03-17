@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBServer.exe" size="315864">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBServer.exe" size="316376">
       <assemblyIdentity name="MMBServer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>2MixIAHwUX419CluDD+ciwemhhABMLd7M8CC7wUd6WA=</dsig:DigestValue>
+        <dsig:DigestValue>NKKL8IcOaOzwh5389LUAuhLJ/zvhZUOaFqDdNcgKEX8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

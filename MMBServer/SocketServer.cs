@@ -42,9 +42,13 @@ namespace MMBServer
     
                 while (true)
                 {
+                    //TCP Listener Configurieren und Starten
                     this.listner = new TcpListener(this.IpAddress, this.Port);
                     this.listner.Start();
+
                     LogService.getInstance().create(LogService._INFORMATION, "TcpIpServer", "Warte auf Verbindung");
+                    
+                    // TCP Lister öffnen für eingehende TCP Connections
                     this.tcpClient = this.listner.AcceptTcpClient();
                     this.stream = tcpClient.GetStream();
                     this.buffer = exampleByteArray();

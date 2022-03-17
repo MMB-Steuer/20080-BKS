@@ -67,7 +67,7 @@ namespace MMBServer
                 new XElement("UserID", _mashineUserID),
                 new XElement("SAP_Workplace", "XXX"),
                 new XElement("PersonnelNumber", _personelNumber),
-                (this.UID.ToString().Length < 4 ?  new XElement("dsc", this.UID) : new XElement("BoardNr", this.UID)),
+                (this.UID.ToString().Length > 4 ?  new XElement("dsc", this.UID) : new XElement("BoardNr", this.UID)),
                 new XElement("ProductionKey", _productionKey)
                     )));
             var xmlDocument = new XmlDocument();
@@ -84,13 +84,11 @@ namespace MMBServer
             if (text == null)
                 text = string.Empty;
             text = text.PadLeft(10, '0');
-
             var combination = string.Empty;
             for (int i = 0; i < 10; i++)
             {
                 combination += Convert.ToChar(Convert.ToInt32(text[i]) + Convert.ToInt32(xValue.ToCharArray()[i]));
             }
-
             var complete = user; 
             complete += password;
             complete += combination;
@@ -106,7 +104,6 @@ namespace MMBServer
                 resultString += result[j];
               //  j++;
             }
-
             return resultString;
         }
         #region DBConnections
@@ -394,7 +391,7 @@ namespace MMBServer
     }
     public class ManufactoringJob
     {
-        // interne ID
+        #region Felder
         private int? iD = null;
         private int? uID = null;
         private string reference = null;
@@ -427,6 +424,8 @@ namespace MMBServer
         public int? Qty { get => qty; set => qty = value; }
         public string Error { get => error; set => error = value; }
         public int? Running { get => running; set => running = value; }
+        public int? QtyWork { get; set; }
+
         public string CustomerInfo { get => customerInfo; set => customerInfo = value; }
         public DateTime? JobCreationDate { get => jobCreationDate; set => jobCreationDate = value; }
         public DateTime? JobCompletedDate { get => jobCompletedDate; set => jobCompletedDate = value; }
@@ -436,6 +435,7 @@ namespace MMBServer
         public string StatusCode { get => statusCode; set => statusCode = value; }
         public int? BLA { get => bLA; set => bLA = value; }
         public int? BLB { get => bLB; set => bLB = value; }
+        #endregion
 
         #region XML Generation
         public XmlDocument DeleteTelegram()
@@ -516,9 +516,9 @@ namespace MMBServer
             UIDNode.InnerText = this.dsc.ToString();
             StatusNode.AppendChild(UIDNode);
 
-            // Transaction Identifier, ca be Omitted
-            XmlNode TIDNode = xml.CreateElement("TID");
-            StatusNode.AppendChild(TIDNode);
+            // Transaction Identifier, ca be Omitted nicht mehr Datenbank seitig gespeichert
+            //XmlNode TIDNode = xml.CreateElement("TID");
+            //StatusNode.AppendChild(TIDNode);
 
             // In Case of an master-key-system key, insert Name here 
             XmlNode SystemNumberNode = xml.CreateElement("SystemNumber");
@@ -526,6 +526,7 @@ namespace MMBServer
             StatusNode.AppendChild(SystemNumberNode);
 
             // Key Number
+            /* nicht mehr Datenbank seitig erfasst
             XmlNode KeyNumberNode = xml.CreateElement("KeyNumber");
             StatusNode.AppendChild(KeyNumberNode);
 
@@ -536,7 +537,8 @@ namespace MMBServer
             // Key Reference (Profile of the Key)
             XmlNode KeyBlankNode = xml.CreateElement("KeyBlank");
             StatusNode.AppendChild(KeyBlankNode);
-
+            */
+            
             /* Error detected in the job -Message, please fill verbosely Whatever the machine 
              * wants to tell us about the error: Type: string.Proposal: Number 6 digits, 
              * Main problem, special problem, freestyle text explaining the problem(solution to solve the problem)
@@ -612,6 +614,8 @@ namespace MMBServer
             XmlNode StatusCodeNode = xml.CreateElement("StatusCode");
             if (this.StatusCode != null)
             {
+                if (this.running == this.Running) { StatusCodeNode.InnerText = "W"; }
+                else { StatusCodeNode.InnerText = "T"; }
                 StatusCodeNode.InnerText = this.StatusCode.ToString();
             }
             StatusNode.AppendChild(StatusCodeNode);
@@ -619,14 +623,14 @@ namespace MMBServer
 
             // Quantity of key in the job wich were produced
             //NOTE: Removed
-            /*XmlNode QtyWorkNode = xml.CreateElement("QtyWork");
+            XmlNode QtyWorkNode = xml.CreateElement("QtyWork");
             if (this.QtyWork != null)
             {
-                QtyWorkNode.InnerText = this.QtyWork.ToString();
+                QtyWorkNode.InnerText = (Quantity - Running).ToString();
             }
             StatusNode.AppendChild(QtyWorkNode);
             LogService.getInstance().create(LogService._INFORMATION, "Create Receipt", xml.OuterXml.ToString());
-            */ 
+            
             return xml;
         }
         public static List<ManufactoringJob> convertFromManufactoringData(XmlDocument xml)
@@ -658,7 +662,6 @@ namespace MMBServer
                         if (node2.Attributes["Length"].Value == "2") BLB = int.Parse(node2.InnerText);
                     }
                 }
-
                 ManufactoringJob item = new ManufactoringJob();
                 // Attribute in item schreiben
                 item.UID = Int32.Parse(UID);
@@ -772,16 +775,12 @@ namespace MMBServer
 
                 list.Add(j);
             }
-
-
             con.dispose();
-
             return list;
         }
         // Create or Update in DB
         public void save()
         {
-
             if (this.ID != null)
             {
                 this._update();
@@ -937,7 +936,6 @@ namespace MMBServer
                 cmd += "StatusCode = null, ";
             }
             //Update QtyWork
-            
             cmd += " WHERE ID = " + this.ID;
             con.ExecuteNonQuery(cmd);
             con.dispose();
@@ -952,10 +950,9 @@ namespace MMBServer
                 throw new Exception("ODBC not initialized");
             }
             string cmd = "Insert Jobs (UID, Reference,SystemNum," +
-                "CyclNumber,Dsc,Qty,TID,KeyNumber,KeyDescription,KeyBlank," +
+                "CyclNumber,Dsc,Qty," +
                 "Error,Running,CustomerInfo,JobCreationDate,JobCompletedDate," +
                 "JobStartDate,JobFinishDate,Quantity,StatusCode,QtyWork, BLA, BLB) VALUES (";
-
             if (this.UID != null)
             {
                 cmd += this.UID + " , ";
@@ -1113,7 +1110,6 @@ namespace MMBServer
             con.ExecuteNonQuery(cmd);
             con.dispose();
             return this;
-
         }
         public void delete()
         {
@@ -1132,7 +1128,6 @@ namespace MMBServer
         private int iD = -1;
         private int uID;
         private string xmlContent = "";
-
         public int ID { get => iD; set => iD = value; }
         public int UID { get => uID; set => uID = value; }
         public string XmlContent { get => xmlContent; set => xmlContent = value; }
