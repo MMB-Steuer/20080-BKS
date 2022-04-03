@@ -33,71 +33,79 @@ namespace XMLServer
         private TcpClient _client;
         private NetworkStream _stream;
         private byte[] _buffer;
+        private XmlDocument defaultXML = new XmlDocument();
 
         public void listen()
         {
             this._adress = IPAddress.Parse("0.0.0.0");
             this._port = 35000;
+            new FileLogger(FileLogger._INFORMATION, "XML-Serer started");
+            Console.WriteLine(FileLogger._INFORMATION, "Started");
+            this._listner = new TcpListener(this._adress, this._port);
 
             while (true)
             {
                 try
                 {
-                    this._listner = new TcpListener(this._adress, this._port);
                     this._listner.Start();
-                    Console.WriteLine("Listen started");
+                    new FileLogger(FileLogger._INFORMATION, "Server Listen started");
+                    #region Load XML
+
+                    defaultXML.Load(@"C:\\Users\\dsteuer\\Documents\\GitHub\\20080-BKS\\XMLS BKS\\ManufactirubgData.xml");
+                    #endregion
                     this._client = this._listner.AcceptTcpClient();
                     this._stream = this._client.GetStream();
+
                     while (true)
-                    {
-                        _stream.ReadTimeout = 1000000;
-                        byte[] _lengthBuffer = new byte[4];
-                        _stream.Read(_lengthBuffer, 0, 4);
-                        int datalength = BitConverter.ToInt32(_lengthBuffer, 0);
-                        _buffer = new byte[datalength];
-                        int totalReadBytes = 0;
-                        while (true)
                         {
-                            int readBytes = _stream.Read(_buffer, totalReadBytes, _buffer.Length - totalReadBytes);
-                            if (readBytes == 0)
+                        Console.WriteLine("connection established");
+
+                        _stream.ReadTimeout = 15000;
+                            byte[] _lengthBuffer = new byte[4];
+                            _stream.Read(_lengthBuffer, 0, 4);
+                            int datalength = BitConverter.ToInt32(_lengthBuffer, 0);
+                            _buffer = new byte[datalength];
+                            int totalReadBytes = 0;
+                            
+                            while (true)
                             {
-                                throw new Exception("No bytes read from network stream");
-                            }
-                            totalReadBytes += readBytes;
-                            if (totalReadBytes >= _buffer.Length)
-                            {
-                                break;
-                            }
+                                int readBytes = _stream.Read(_buffer, totalReadBytes, _buffer.Length - totalReadBytes);
+                            break;
+                                /*if (readBytes == 0)
+                                {
+                                  throw new Exception("No bytes read from network stream");
+                                }
+                                totalReadBytes += readBytes;
+                                if (totalReadBytes >= _buffer.Length)
+                                {
+                                  break;
+                                } */
+                            } 
+
+                            byte[] data = Encoding.Default.GetBytes(defaultXML.OuterXml);
+                            var sizeBuffer = BitConverter.GetBytes((int) data.Length);
+                            var buffer = new byte[sizeBuffer.Length + data.Length];
+                            sizeBuffer.CopyTo(buffer, 0);
+                            data.CopyTo(buffer, 4);
+                            _stream.Write(buffer, 0,buffer.Length);
+                            break;
                         }
-                        string txt = System.Text.UTF8Encoding.UTF8.GetString(_buffer);
-                        XmlDocument xmlDoc = new XmlDocument();
-                        xmlDoc.LoadXml(txt);
-                        Console.Write(xmlDoc.OuterXml.ToString());
-                        _stream.Write(_buffer, 0, _buffer.Length);
-                    }
+
+
+
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
+                    new FileLogger(FileLogger._EXCEPTION, ex.ToString());
                 }
                 finally
                 {
-                    try
-                    {
-                        _stream.Close();
-                    }
-                    catch (Exception ex)
-                    {
-
-                    }
-                    try
-                    {
-                        _client.Close();
-                    }
-                    catch (Exception ex) { }
-                    _stream = null;
-                    _client = null;
-                    _listner = null;
+                   // _stream.Close();
+                   // _listner.Stop();
+                   // _client.Close();
+                   // _stream = null;
+                   // _client = null;
+                   // _listner = null;
                 }
             }
         }

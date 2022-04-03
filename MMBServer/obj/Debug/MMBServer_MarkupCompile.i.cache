@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\MMB\BKS_20080\MMBServer\obj\Debug\
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\
 MMBServer
 none
 false
 DEBUG;TRACE
-C:\MMB\BKS_20080\MMBServer\App.xaml
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\App.xaml
 5-2136004662
 
 17775544521
-15-698523077
+15-707582668
 MainWindow.xaml;MMBSettings.xaml;PasswordWindow.xaml;ResetPasswordWindow.xaml;SettingsWindow.xaml;
 
-False
+True
 

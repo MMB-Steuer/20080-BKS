@@ -22,7 +22,7 @@
 		</systemSettings>
 		
 		<mashineSettings>
-			<add key="userID" value="50006" />
+			<add key="userID" value="60008" />
 			<add key="ProductionID" value="CYLS" /> 
 			<add key="XValue" value="1234567890" />
 			<add key="KommunikationUser" value="XML_Data" />
@@ -33,9 +33,9 @@
 		
 		<odbcSettings>
 			<add key="DSN" value ="MMB20080" />
-			<add key="UserRequired" value="false" />
-			<add key="User" value="" />
-			<add key="PWD" value="" />
+			<add key="UserRequired" value="true" />
+			<add key="User" value="sa" />
+			<add key="PWD" value="Dst21071983!" />
 		</odbcSettings>
 		 
 		<tcpServerSettings>
@@ -53,7 +53,7 @@
 		</tcpServerSettings>
 		
 		<xmlClientSettings>
-			<add key="ServerAdress" value="FunctionalTestap.bks.de" />
+			<add key="ServerAdress" value="ProduktionFert.bks.de" />
 			<add key="ServerPort" value="35000" />
 			<add key="XMLVersion" value="5" />
 		</xmlClientSettings>

@@ -14,6 +14,7 @@ namespace MMBTestClient
         private static Thread thread2;
         private static TcpTestClient tcpClient = new TcpTestClient();
         private static bool runtime = true;
+        public static int uid = 1541251;
         static void Main(string[] args)
         {
             Console.WriteLine("start");
@@ -49,7 +50,7 @@ namespace MMBTestClient
                         switch (cmdA)
                         {
                             case "1":   tcpClient.cmd = (byte)1; break;
-                            case "2":   tcpClient.cmd = (byte)1; break;
+                            case "2":   tcpClient.cmd = (byte)2; break;
                             default: tcpClient.cmd = (byte)0; break;
                         }
                         
@@ -99,7 +100,7 @@ namespace MMBTestClient
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine(ex);
+                    new FileLogger(FileLogger._EXCEPTION, ex.ToString());
                     continue;
                 }
                 while (true)
@@ -113,12 +114,11 @@ namespace MMBTestClient
                         Thread.Sleep(new Random().Next(500, 2500));
                         data[1] = (byte)(data[1] + 1);
                         data[0] = cmd;
+                        Encoding.Default.GetBytes("1541251").CopyTo(data,2);
                         this.printData(data);
                         _stream.Write(data, 0, data.Length);
                         lastCmd = cmd;
-                        Console.WriteLine("Data send");
                         _stream.Read(data, 0, data.Length);
-                        Console.WriteLine("Data received");
                     }
                     catch (Exception ex)
                     {
@@ -133,7 +133,7 @@ namespace MMBTestClient
             byte cmd = data[0];
             byte counter = data[1];
             string UID = System.Text.ASCIIEncoding.ASCII.GetString(data, 2, 10);
-            Console.WriteLine("Counter :" + counter + " | cmd: " + cmd + " | uid: " + UID);
+            new FileLogger(FileLogger._DEBUG, "Counter :" + counter + " | cmd: " + cmd + " | uid: " + UID);
         }
 
         public void dispose() { 

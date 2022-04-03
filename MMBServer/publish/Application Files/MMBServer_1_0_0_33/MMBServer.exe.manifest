@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
   <asmv1:assemblyIdentity name="MMBServer.exe" version="1.0.0.33" publicKeyToken="9fe76ab4be92750b" language="neutral" processorArchitecture="msil" type="win32" />
-  <description asmv2:iconFile="Icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
     <assemblyIdentity name="MMBServer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
@@ -43,33 +42,36 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBServer.exe" size="468952">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBServer.exe" size="317912">
       <assemblyIdentity name="MMBServer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>OvgKEUUpcpR7N8n1sOkKBMVJvEiNrcfZYat+X2Wf1Cs=</dsig:DigestValue>
+        <dsig:DigestValue>Z4a/t2Tg4ZXSAWO5bzS8ZbIPcN6w18aQdVAx6JOdsnM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="Icon.ico" size="73478">
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MMBServer.exe.config" size="2481">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Mr68lPpxNXYAsIfXZCnAlt+gdm8h4YDVtYQFiw2NEgc=</dsig:DigestValue>
+      <dsig:DigestValue>woLxX3CVj+0S+FEYSRFtkhdWv8lzihteptkFzmVqpTg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="MMBServer.exe.config" size="2480">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>L/1HHB2nNeP5xLKol+MuHZZUOhVx6OSUvVYEiJhMLN8=</dsig:DigestValue>
-    </hash>
-  </file>
-<publisherIdentity name="CN=AzureAD\DennisSteuer" issuerKeyHash="b53df160e1b149bc6753a2e25b215267ef6deaa2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>5pzzfLxZdSMgbzkJ/SkmD9BxQbZZG80ePrx/HZrZgeo=</DigestValue></Reference></SignedInfo><SignatureValue>A603hWdMvwugzNrFJkZEkhHQoynDjY+8zYWIrSoIUn8LB/+FtGE1JznEPqNdfNdo+pvDiABqgQrQHjUYxCTymQZICTtp3JYQZYd2gt+s87jUSJ9WF4pMWV0Dm6Tql1KzTsO5+eK4Id6PvJ4N2xR3AX+6hOwZ5TC5iVnXcr/UfaY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zuIegaatovma3Tsuya+klf+sYvtBUGugNxTK1NbNt8SJ/+mJ6R2dOpdOOI9JXWvGd2jA7XSa6+WOkxf3svvarSO6OMPztYaYGvQJHIVyBsNngkr05jmvAP/M7E3nIunL/YnyIRFVQgvileJOI5eXNTjJw5MmXgqNxE67d0oaZjU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ea81d99a1d7fbc3e1ecd1b59b64171d00f2629fd09396f20237559bc7cf39ce6" Description="" Url=""><as:assemblyIdentity name="MMBServer.exe" version="1.0.0.33" publicKeyToken="9fe76ab4be92750b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AzureAD\DennisSteuer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>FbnnGus19m5EIGxaBJJcqoN+RBzUWDpGT9LjIG9gXec=</DigestValue></Reference></SignedInfo><SignatureValue>ltrXRFTZF6iJ9U8AMagUifdkwMEsrmYsV+H8NM66kQPY77B+A02QWqGLbKn2xJoqq3mixaCbwqXqcf74aW16WCe1ujNSnofoFrWb65aNVFZD2mNWW7z41qXRobOF06ZTEyAmlU84PH+AR5tY1Mcd66zulPe8OHhepIG8Vu3bitY=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zuIegaatovma3Tsuya+klf+sYvtBUGugNxTK1NbNt8SJ/+mJ6R2dOpdOOI9JXWvGd2jA7XSa6+WOkxf3svvarSO6OMPztYaYGvQJHIVyBsNngkr05jmvAP/M7E3nIunL/YnyIRFVQgvileJOI5eXNTjJw5MmXgqNxE67d0oaZjU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQcsfB38Nlm4BLwPPBmNc6OzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAQQB6AHUAcgBlAEEARABcAEQAZQBuAG4AaQBzAFMAdABlAHUAZQByMB4XDTIxMTAyMjA2MTIwN1oXDTIyMTAyMjEyMTIwN1owMzExMC8GA1UEAx4oAEEAegB1AHIAZQBBAEQAXABEAGUAbgBuAGkAcwBTAHQAZQB1AGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzuIegaatovma3Tsuya+klf+sYvtBUGugNxTK1NbNt8SJ/+mJ6R2dOpdOOI9JXWvGd2jA7XSa6+WOkxf3svvarSO6OMPztYaYGvQJHIVyBsNngkr05jmvAP/M7E3nIunL/YnyIRFVQgvileJOI5eXNTjJw5MmXgqNxE67d0oaZjUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAThkqZamRi4V8JYlli/0/bwquqggbTG8kIMKbkhVhQuXSS6+amZXpX3TF2lSLGykU51fw7irogAutB6l9F8KHotFr5QY9rQTZ5Hos0pRmdH467Nn2PB6HjRv1V36/+ILCdsVa1oAMpzONQP8xDKG5S9rm9l16pnzJkdeBCBfOhkA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
+<publisherIdentity name="CN=AzureAD\DennisSteuer" issuerKeyHash="b53df160e1b149bc6753a2e25b215267ef6deaa2" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7v27mrBFYG/49IVlwKnFWMoNpaXcX4TSssVORz6KEeo=</DigestValue></Reference></SignedInfo><SignatureValue>DExEVOSZATSJ9+tHSu9SVfCZP4VCW2o+OKrFrwylAwKNmB/pAfxAVrlOmWOdc6UwE36L44adN4LwOI9/bQ5cc3809OYttkZgyUjODHR+gc3IjG31tMLp6E+Dge5NcSJwxY7MMgZLY8tJKc8V2feSyJUaRnYIYTjvIXJ+VGkfmRY=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zuIegaatovma3Tsuya+klf+sYvtBUGugNxTK1NbNt8SJ/+mJ6R2dOpdOOI9JXWvGd2jA7XSa6+WOkxf3svvarSO6OMPztYaYGvQJHIVyBsNngkr05jmvAP/M7E3nIunL/YnyIRFVQgvileJOI5eXNTjJw5MmXgqNxE67d0oaZjU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="ea118a3e474ec5b2d2845fdca5a50dca58c5a9c06585f4f86f6045b09abbfdee" Description="" Url=""><as:assemblyIdentity name="MMBServer.exe" version="1.0.0.33" publicKeyToken="9fe76ab4be92750b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AzureAD\DennisSteuer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>GLwyaMldRkd6UHu5cVX3HfXE7uwIUFT6UVOQNoIhODg=</DigestValue></Reference></SignedInfo><SignatureValue>PziK7myelvLK2CKroK6VRhkQPakpwqOVqHQn0J8ZIWsxL1mdiIk1Dalzr2DHORUR5BUzyoqxIiHhskfgrXxLcVTJK3D22r6DWI1UL07DycjsHCMiMQSeaSxubIMckEf6wETLM6m4Hrzkqyh8nw64ccAxQpiz7ojKFTVQ+VEGAk4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zuIegaatovma3Tsuya+klf+sYvtBUGugNxTK1NbNt8SJ/+mJ6R2dOpdOOI9JXWvGd2jA7XSa6+WOkxf3svvarSO6OMPztYaYGvQJHIVyBsNngkr05jmvAP/M7E3nIunL/YnyIRFVQgvileJOI5eXNTjJw5MmXgqNxE67d0oaZjU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQcsfB38Nlm4BLwPPBmNc6OzANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAQQB6AHUAcgBlAEEARABcAEQAZQBuAG4AaQBzAFMAdABlAHUAZQByMB4XDTIxMTAyMjA2MTIwN1oXDTIyMTAyMjEyMTIwN1owMzExMC8GA1UEAx4oAEEAegB1AHIAZQBBAEQAXABEAGUAbgBuAGkAcwBTAHQAZQB1AGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzuIegaatovma3Tsuya+klf+sYvtBUGugNxTK1NbNt8SJ/+mJ6R2dOpdOOI9JXWvGd2jA7XSa6+WOkxf3svvarSO6OMPztYaYGvQJHIVyBsNngkr05jmvAP/M7E3nIunL/YnyIRFVQgvileJOI5eXNTjJw5MmXgqNxE67d0oaZjUCAwEAATANBgkqhkiG9w0BAQsFAAOBgQAThkqZamRi4V8JYlli/0/bwquqggbTG8kIMKbkhVhQuXSS6+amZXpX3TF2lSLGykU51fw7irogAutB6l9F8KHotFr5QY9rQTZ5Hos0pRmdH467Nn2PB6HjRv1V36/+ILCdsVa1oAMpzONQP8xDKG5S9rm9l16pnzJkdeBCBfOhkA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

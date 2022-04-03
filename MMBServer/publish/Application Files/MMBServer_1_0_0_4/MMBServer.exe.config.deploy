@@ -17,7 +17,7 @@
 		<systemSettings>
 			<add key="MMBPassword" value="826B4BD4EECAB4FB715E849CCFE5AEE3DC3D8563FAACB9404D8BA7FC245954E2" />
 			<add key="SettingsPassword" value="826B4BD4EECAB4FB715E849CCFE5AEE3DC3D8563FAACB9404D8BA7FC245954E2" />
-			<add key="IsDevelopeMode" value="false" />
+			<add key="IsDevelopeMode" value="true" />
 			<add key="NotificationAge" value="7" />
 		</systemSettings>
 		
@@ -33,9 +33,9 @@
 		
 		<odbcSettings>
 			<add key="DSN" value ="MMB20080" />
-			<add key="UserRequired" value="false" />
-			<add key="User" value="" />
-			<add key="PWD" value="" />
+			<add key="UserRequired" value="true" />
+			<add key="User" value="sa" />
+			<add key="PWD" value="Dst21071983!" />
 		</odbcSettings>
 		 
 		<tcpServerSettings>

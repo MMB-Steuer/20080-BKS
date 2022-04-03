@@ -1,55 +1,61 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <configuration>
-  <configSections>
-    <sectionGroup name="MySettings">
-      <section name="systemSettings" type="System.Configuration.NameValueSectionHandler" />
-      <section name="mashineSettings" type="System.Configuration.NameValueSectionHandler" />
-      <section name="odbcSettings" type="System.Configuration.NameValueSectionHandler" />
-      <section name="tcpServerSettings" type="System.Configuration.NameValueSectionHandler" />
-      <section name="xmlClientSettings" type="System.Configuration.NameValueSectionHandler" />
-    </sectionGroup>
-  </configSections>
-  <startup>
-    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
-  </startup>
-  <MySettings>
-    <!-- Initial Passwords = 123456-->
-    <systemSettings>
-      <add key="MMBPassword" value="826B4BD4EECAB4FB715E849CCFE5AEE3DC3D8563FAACB9404D8BA7FC245954E2" />
-      <add key="SettingsPassword" value="826B4BD4EECAB4FB715E849CCFE5AEE3DC3D8563FAACB9404D8BA7FC245954E2" />
-      <add key="IsDevelopeMode" value="true" />
-      <add key="NotificationAge" value="7" />
-    </systemSettings>
-    <mashineSettings>
-      <add key="userID" value="50008" />
-      <add key="ProductionID" value="CYLS" />
-      <add key="XValue" value="1234567890" />
-      <add key="KommunikationUser" value="XML_Data" />
-      <add key="KommunikationPassword" value="testdata" /> 
-    </mashineSettings> 
-    <odbcSettings>
-      <add key="DSN" value="MMB20080" />
-      <add key="UserRequired" value="true" />
-      <add key="User" value="sa" />
-      <add key="PWD" value="Dst21071983!" />
-    </odbcSettings>
-    <tcpServerSettings>
-      <add key="ServerAdress" value="0.0.0.0" />
-      <add key="ServerPort" value="8000" />
-      <add key="PackageSize" value="32" />
-      <add key="CMD_offset" value="0" />
-      <add key="Count_offset" value="1" />
-      <add key="UID_offset" value="2" />
-      <add key="UID_length" value="10" />
-      <add key="PersonalNumber_offset" value="12" />
-      <add key="PersonalNumber_length" value="10" />
-      <add key="PersonalPassword_offset" value="22" />
-      <add key="PersonalPassword_length" value="10" />
-    </tcpServerSettings>
-    <xmlClientSettings>
-      <add key="ServerAdress" value="FunctionalTestAp.bks.de" />
-      <add key="ServerPort" value="35000" />
-      <add key="XMLVersion" value="5" />
-    </xmlClientSettings>
-  </MySettings>
+	<configSections>
+		<sectionGroup name="MySettings">
+			<section name="systemSettings" type="System.Configuration.NameValueSectionHandler" />
+			<section name="mashineSettings" type="System.Configuration.NameValueSectionHandler" />
+			<section name="odbcSettings" type="System.Configuration.NameValueSectionHandler" />
+			<section name="tcpServerSettings" type="System.Configuration.NameValueSectionHandler" />
+			<section name="xmlClientSettings" type="System.Configuration.NameValueSectionHandler" />
+		</sectionGroup>
+	</configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+    </startup>
+	<MySettings>
+		<!-- Initial Passwords = 123456-->
+		<systemSettings>
+			<add key="MMBPassword" value="826B4BD4EECAB4FB715E849CCFE5AEE3DC3D8563FAACB9404D8BA7FC245954E2" />
+			<add key="SettingsPassword" value="826B4BD4EECAB4FB715E849CCFE5AEE3DC3D8563FAACB9404D8BA7FC245954E2" />
+			<add key="IsDevelopeMode" value="true" />
+			<add key="NotificationAge" value="7" />
+		</systemSettings>
+		
+		<mashineSettings>
+			<add key="userID" value="60008" />
+			<add key="ProductionID" value="CYLS" /> 
+			<add key="XValue" value="1234567890" />
+			<add key="KommunikationUser" value="XML_Data" />
+			<add key="KommunikationPassword" value="testdata" />
+			<add key="PersonalNumber" value="testdata" />
+			<add key="PersonalPassword" value="testdata" />
+		</mashineSettings>
+		
+		<odbcSettings>
+			<add key="DSN" value ="MMB20080" />
+			<add key="UserRequired" value="true" />
+			<add key="User" value="sa" />
+			<add key="PWD" value="Dst21071983!" />
+		</odbcSettings>
+		 
+		<tcpServerSettings>
+			<add key="ServerAdress" value="0.0.0.0" />
+			<add key="ServerPort" value="8000" />
+			<add key="PackageSize" value="32" />
+			<add key="CMD_offset" value="0" />
+			<add key="Count_offset" value="1" />
+			<add key="UID_offset" value="2" />
+			<add key="UID_length" value="10" />
+			<add key="PersonalNumber_offset" value="12" />
+			<add key="PersonalNumber_length" value="10" />
+			<add key="PersonalPassword_offset" value="22" />
+			<add key="PersonalPassword_length" value="10" />
+		</tcpServerSettings>
+		
+		<xmlClientSettings>
+			<add key="ServerAdress" value="ProduktionFert.bks.de" />
+			<add key="ServerPort" value="35000" />
+			<add key="XMLVersion" value="5" />
+		</xmlClientSettings>
+	</MySettings>
 </configuration>

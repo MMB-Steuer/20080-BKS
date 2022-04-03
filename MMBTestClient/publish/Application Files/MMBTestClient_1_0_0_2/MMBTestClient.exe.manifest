@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="MMBTestClient.exe" version="1.0.0.2" publicKeyToken="92e1d36fec0090ca" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="MMBTestClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="MMBTestClient.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC-Manifestoptionen
+          Wenn Sie die Zugangsebene für das Windows-Benutzerkonto ändern möchten, ersetzen Sie den 
+          requestedExecutionLevel-Knoten durch eines der folgenden Elemente.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         Löschen Sie den requestedExecutionLevel-Knoten, wenn Sie 
+         zum Gewährleisten der Abwärtskompatibilität die Datei- und Registrierungsvirtualisierung verwenden möchten.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MMBTestClient.exe" size="10200">
+      <assemblyIdentity name="MMBTestClient" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>YNSRJ+JL8NLY0bUlbjgwgix6sN2C9ndAf/f6RpPR6O0=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="MMBTestClient.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=AzureAD\DennisSteuer" issuerKeyHash="7d1842737bfac5f6fbbb5e407c366ed2a7572072" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>C8wVvY1Op4hsTfI9caW/ma3wH92sQNNArSBkXWpcGrk=</DigestValue></Reference></SignedInfo><SignatureValue>AJO5gXzQMWbFCWdGWP+f6Bolzz7t88YBggbFmNIF0uqwbvVazsOLKxoTqUmy61b9M2xh29vFBHROV0dz+FK8EBJvLGaTZCmgVcl+Xu2Vh0SjmNJtp6JzQjlRKFvpIpSK7WLAY8POb/Tx9vsq7JvTws8Sv0TJqyEI4x3q/bVs8fM=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xAAsEVHQmlWIEb7FiPjPnxf6zcpx+7iU6nw4dItMg5S38p5Kch4OR3VnB2sRAbGGyuff9498TnDQVBVZn1lT/evEeXsA/uhfLhsuhOziO+8JE8GXIpNCuHaIfOU3iSJ824t9JmDpvB4Z5WAYBd8FPat7HIRvkKqko58d+LGVsOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b91a5c6a5d6420ad40d340acdd1ff0ad99bfa5713df24d6c88a74e8dbd15cc0b" Description="" Url=""><as:assemblyIdentity name="MMBTestClient.exe" version="1.0.0.2" publicKeyToken="92e1d36fec0090ca" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=AzureAD\DennisSteuer</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>f6rv8OJw01XmuGevXWqBVjBTjggLvqhiA/Hhv4/ZKLw=</DigestValue></Reference></SignedInfo><SignatureValue>cBjiU+xAagxlshyuen2yho1CSU4ykLgXI0MvaMvo9Nlc/QKiFgKYoH/U+26NIX6lno7SGSdyaMiA4m96loEzqXcBN0Ll2R3cdfgWiQLHeo7XvaupFHS4HEYOpNWMSj1soJRtbDA+EKgmY9aZmr4o3CnMCi5svW+FjWnPTXal8Dc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xAAsEVHQmlWIEb7FiPjPnxf6zcpx+7iU6nw4dItMg5S38p5Kch4OR3VnB2sRAbGGyuff9498TnDQVBVZn1lT/evEeXsA/uhfLhsuhOziO+8JE8GXIpNCuHaIfOU3iSJ824t9JmDpvB4Z5WAYBd8FPat7HIRvkKqko58d+LGVsOE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQcuxqAkR3KJBOUwfbGfmcpTANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigAQQB6AHUAcgBlAEEARABcAEQAZQBuAG4AaQBzAFMAdABlAHUAZQByMB4XDTIxMTAyMDEyMjcxNFoXDTIyMTAyMDE4MjcxNFowMzExMC8GA1UEAx4oAEEAegB1AHIAZQBBAEQAXABEAGUAbgBuAGkAcwBTAHQAZQB1AGUAcjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAxAAsEVHQmlWIEb7FiPjPnxf6zcpx+7iU6nw4dItMg5S38p5Kch4OR3VnB2sRAbGGyuff9498TnDQVBVZn1lT/evEeXsA/uhfLhsuhOziO+8JE8GXIpNCuHaIfOU3iSJ824t9JmDpvB4Z5WAYBd8FPat7HIRvkKqko58d+LGVsOECAwEAATANBgkqhkiG9w0BAQsFAAOBgQB5ExYLLT7sE6zBcByxMDlpvJ6YnB7FFuFtqrNvnoOd0v/dcwAGjPgjZSZOsNwtnoRAQxwHSuRu9NxXZxwQ678P5DKM4hu88s5A1BivNsSkP/8q51T9pll18uU2n+zypWMG9HWa5xdZLn9hg5PhhbKoq5pdrqm5e99nSYR/pMCiZg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

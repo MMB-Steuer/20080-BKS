@@ -1,0 +1,13 @@
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\bin\Release\XMLServer.exe.config
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\bin\Release\XMLServer.exe
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\bin\Release\XMLServer.pdb
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.csproj.AssemblyReference.cache
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.csproj.SuggestedBindingRedirects.cache
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.csproj.CoreCompileInputs.cache
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.exe
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.pdb
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\bin\Release\XMLServer.exe.manifest
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\bin\Release\XMLServer.application
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.TrustInfo.xml
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.exe.manifest
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\XMLServer\obj\Release\XMLServer.application

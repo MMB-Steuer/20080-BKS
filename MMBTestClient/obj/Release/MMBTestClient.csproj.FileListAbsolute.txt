@@ -1,0 +1,12 @@
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\bin\Release\MMBTestClient.exe.config
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\bin\Release\MMBTestClient.exe.manifest
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\bin\Release\MMBTestClient.application
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\bin\Release\MMBTestClient.exe
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\bin\Release\MMBTestClient.pdb
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.csproj.AssemblyReference.cache
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.csproj.CoreCompileInputs.cache
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.exe.manifest
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.application
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.exe
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBTestClient\obj\Release\MMBTestClient.pdb

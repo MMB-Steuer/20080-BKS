@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
 using System.Linq;
@@ -67,7 +68,7 @@ namespace MMBServer
                 new XElement("UserID", _mashineUserID),
                 new XElement("SAP_Workplace", "XXX"),
                 new XElement("PersonnelNumber", _personelNumber),
-                (this.UID.ToString().Length > 4 ?  new XElement("dsc", this.UID) : new XElement("BoardNr", this.UID)),
+                (this.UID.ToString().Length > 4 ?  new XElement("dsc", this.UID) : new XElement("BoardNo", this.UID)),
                 new XElement("ProductionKey", _productionKey)
                     )));
             var xmlDocument = new XmlDocument();
@@ -638,7 +639,7 @@ namespace MMBServer
             List<ManufactoringJob> list = new List<ManufactoringJob>();
             XmlNodeList nodeList = xml.DocumentElement.SelectNodes("/Root/Telegram/Job");
             string UID = "", Reference = "", SystemNum = "", CylNumber = "", Dsc = "";
-            int CylNumer = 0, Qty = 0, Quantity = 0, BLA = 0, BLB = 0;
+            int CylNumer = 0, Qty = 0, Quantity = 0, BLA = -1, BLB = -1, Core = 1;
             DateTime JobCreationDate = DateTime.Now;
             string res = "";
             foreach (XmlNode node in nodeList)
@@ -648,18 +649,23 @@ namespace MMBServer
                 Reference = node.SelectSingleNode("Reference").InnerText;
                 SystemNum = node.SelectSingleNode("SystemNum").InnerText;
                 CylNumber = node.SelectSingleNode("CylNumber").InnerText;
+                XmlNode spec = node.SelectSingleNode("CylinderSpec");
+
+                Core = Int32.Parse(spec.SelectSingleNode("Core").InnerText);
+                //Console.WriteLine("CORE :" + spec.SelectSingleNode("Core").InnerText);
                 Dsc = node.SelectSingleNode("Dsc").InnerText;
                 Qty = Int32.Parse(node.SelectSingleNode("Qty").InnerText);
                 Quantity = Int32.Parse(node.SelectSingleNode("Qty").InnerText);
 
                 // BLA BLB Nodes
                 // Length Values auslesen
-                XmlNode specs = node.SelectSingleNode("CylinderSpec");
-                foreach (XmlNode node2 in specs)
+                int c = 0;
+                foreach (XmlNode node2 in spec.SelectNodes("Length"))
                 {
-                    if (node2.Name == "Length" && node2.Attributes["Length"] != null) {
-                        if (node2.Attributes["Length"].Value == "1") BLA = int.Parse(node2.InnerText);
-                        if (node2.Attributes["Length"].Value == "2") BLB = int.Parse(node2.InnerText);
+                    c = c + 1;
+                    if (c== 1)
+                    {
+                        BLA = Int32.Parse(node2.InnerText);
                     }
                 }
                 ManufactoringJob item = new ManufactoringJob();
@@ -669,9 +675,12 @@ namespace MMBServer
                 item.SystemNum = SystemNum;
                 item.CyclNumber = CylNumber;
                 item.Dsc = Dsc;
-                item.Qty = Qty;
+                item.Qty = Qty * Core;
                 item.Quantity = Quantity;
                 item.JobCreationDate = JobCreationDate;
+                if (BLA >= 0) {  item.BLA = BLA; }
+                if (BLB >= 0) {  item.BLB = BLB; }
+
                 list.Add(item);
             }
             return list;
@@ -691,11 +700,7 @@ namespace MMBServer
             while (dbreader.Read())
             {
                 ManufactoringJob j = new ManufactoringJob();
-                try
-                {
-                    j.ID = dbreader.GetInt32(dbreader.GetOrdinal("ID"));
-                }
-                catch (Exception Ex) { }
+                    j.ID =  dbreader.GetInt32(dbreader.GetOrdinal("ID"));
                 try
                 {
                     j.UID = dbreader.GetInt32(dbreader.GetOrdinal("UID"));
@@ -772,7 +777,7 @@ namespace MMBServer
                     j.StatusCode = dbreader.GetString(dbreader.GetOrdinal("StatusCode"));
                 }
                 catch (Exception Ex) { }
-
+   
                 list.Add(j);
             }
             con.dispose();
@@ -949,10 +954,10 @@ namespace MMBServer
             {
                 throw new Exception("ODBC not initialized");
             }
-            string cmd = "Insert Jobs (UID, Reference,SystemNum," +
+            string cmd = "Insert into Jobs (UID, Reference,SystemNum," +
                 "CyclNumber,Dsc,Qty," +
                 "Error,Running,CustomerInfo,JobCreationDate,JobCompletedDate," +
-                "JobStartDate,JobFinishDate,Quantity,StatusCode,QtyWork, BLA, BLB) VALUES (";
+                "JobStartDate,JobFinishDate,Quantity,StatusCode, BLA, BLB) VALUES (";
             if (this.UID != null)
             {
                 cmd += this.UID + " , ";
@@ -1100,13 +1105,14 @@ namespace MMBServer
             //BLB
             if (this.BLB != null)
             {
-                cmd += "'" + this.BLB + "' , ";
+                cmd += "'" + this.BLB + "' ";
             }
             else
             {
-                cmd += "null, ";
+                cmd += "null ";
             }
             cmd += ");";
+            new FileLogger(FileLogger._INFORMATION, "Job Created: " + JsonConvert.SerializeObject(this));
             con.ExecuteNonQuery(cmd);
             con.dispose();
             return this;

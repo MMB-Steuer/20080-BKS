@@ -81,6 +81,13 @@ D:\repo\20080-BKS\MMBServer\obj\Debug\MMBServer.exe.manifest
 D:\repo\20080-BKS\MMBServer\obj\Debug\MMBServer.application
 D:\repo\20080-BKS\MMBServer\obj\Debug\MMBServer.exe
 D:\repo\20080-BKS\MMBServer\obj\Debug\MMBServer.pdb
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.exe.config
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.exe.manifest
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.application
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.exe
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.pdb
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\Newtonsoft.Json.dll
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\Newtonsoft.Json.xml
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.csproj.AssemblyReference.cache
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.csproj.SuggestedBindingRedirects.cache
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MainWindow.g.cs
@@ -91,13 +98,6 @@ C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\SettingsWindow.g
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\App.g.cs
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer_MarkupCompile.cache
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer_MarkupCompile.lref
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.exe
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.pdb
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.exe.config
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.exe.manifest
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.application
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.exe
-C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\bin\Debug\MMBServer.pdb
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MainWindow.baml
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBSettings.baml
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\PasswordWindow.baml
@@ -109,3 +109,6 @@ C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.csproj
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.csproj.CoreCompileInputs.cache
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.exe.manifest
 C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.application
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.csproj.CopyComplete
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.exe
+C:\Users\dsteuer\Documents\GitHub\20080-BKS\MMBServer\obj\Debug\MMBServer.pdb

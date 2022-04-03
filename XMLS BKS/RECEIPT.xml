@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+  <Telegram Name="Receipt">
+    <Version>5</Version>
+    <CommunicationUSR>XML_Data</CommunicationUSR>
+    <CommunicationPWD>22220845157177223792362222617921725319010328</CommunicationPWD>
+    <UserId>50006</UserId>
+    <Date>25.10.2021 14:37:52</Date>
+    <Status>
+      <!-- Unique identifier of the JOB (!) WE KNOW THAT IT IS ALWAYS THE SAME FOR EACH JOB. -->
+      <!-- PROBABLY A BUG IN SABSY PROGRAM-->
+      <UID>1158824</UID>
+      <!-- TID ist unbekannt-->
+      <SystemNumber>OAALSY</SystemNumber>
+      <!-- Closure name ("Schliessungsname") -->
+      <KeyNumber>Z</KeyNumber> />
+      <!-- <KeyDescription ist unbekannt/> -->
+      <!-- <KeyBlank ist unbekannt/> -->
+      <!-- Error occured in job execution -->
+      <Error />
+      <!-- Running number of the cylinder position -->
+      <Running>1</Running> />
+      <CustomerInfo />
+      <JobCreationDate>25.10.2021 14:37:22</JobCreationDate>
+      <JobCompletedDate>25.10.2021 14:37:30</JobCompletedDate> />
+      <JobStartDate>25.10.2021 14:37:40</JobStartDate> />
+      <JobFinishDate>25.10.2021 14:37:50</JobFinishDate> />
+      <!--Quantity of cylinders in the job-->
+      <Quantity>3</Quantity>
+      <!--Status Code of the JOB (W = Completed , T = Aborted )-->
+      <StatusCode>W</StatusCode> />
+      <!--Quantity of cylinders in the job which were produced-->
+      <QtyWork>3</QtyWork>
+      <!-- Unique identifier of the JOB (!) WE KNOW THAT IT IS ALWAYS THE SAME FOR EACH JOB. -->
+      <!-- PROBABLY A BUG IN SABSY PROGRAM-->
+      <UID>1158824</UID>
+      <!-- TID ist unbekannt-->
+      <SystemNumber>OAALSY</SystemNumber>
+      <!-- Closure name ("Schliessungsname") -->
+      <KeyNumber>1</KeyNumber> />
+      <!-- <KeyDescription ist unbekannt/> -->
+      <!-- <KeyBlank ist unbekannt/> -->
+      <!-- Error occured in job execution -->
+      <Error />
+      <!-- Running number of the cylinder position -->
+      <Running>2</Running> />
+      <CustomerInfo />
+      <JobCreationDate>25.10.2021 14:38:22</JobCreationDate>
+      <JobCompletedDate>25.10.2021 14:38:30</JobCompletedDate> />
+      <JobStartDate>25.10.2021 14:38:40</JobStartDate> />
+      <JobFinishDate>25.10.2021 14:38:50</JobFinishDate> />
+      <!--Quantity of cylinders in the job-->
+      <Quantity>2</Quantity>
+      <!--Status Code of the JOB (W = Completed , T = Aborted )-->
+      <StatusCode>W</StatusCode> />
+      <!--Quantity of cylinders in the job which were produced-->
+      <QtyWork>2</QtyWork>
+      <!-- Unique identifier of the JOB (!) WE KNOW THAT IT IS ALWAYS THE SAME FOR EACH JOB. -->
+      <!-- PROBABLY A BUG IN SABSY PROGRAM-->
+      <UID>1158824</UID>
+      <!-- TID ist unbekannt-->
+      <SystemNumber>OAALSY</SystemNumber>
+      <!-- Closure name ("Schliessungsname") -->
+      <KeyNumber>2</KeyNumber> />
+      <!-- <KeyDescription ist unbekannt/> -->
+      <!-- <KeyBlank ist unbekannt/> -->
+      <!-- Error occured in job execution -->
+      <Error>Sicherheitskreis unterbrochen</Error> />
+      <!-- Running number of the cylinder position -->
+      <Running>3</Running> />
+      <CustomerInfo />
+      <JobCreationDate>25.10.2021 14:39:22</JobCreationDate>
+      <JobCompletedDate>25.10.2021 14:39:30</JobCompletedDate>
+      <JobStartDate>25.10.2021 14:39:40</JobStartDate> 
+      <JobFinishDate>25.10.2021 14:39:50</JobFinishDate> 
+      <!--Quantity of cylinders in the job-->
+      <Quantity>5</Quantity>
+      <!--Status Code of the JOB (W = Completed , T = Aborted )-->
+      <StatusCode>T</StatusCode> />
+      <!--Quantity of cylinders in the job which were produced-->
+      <QtyWork>2</QtyWork>
+    </Status>
+  </Telegram>
+</Root>

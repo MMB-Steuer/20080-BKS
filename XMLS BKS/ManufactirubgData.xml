@@ -1,0 +1,426 @@
+<Root>
+<!-- Version number of XML-template, to control change of tags -->
+<Version>4</Version>
+<Telegram Name="ManufactoringData">
+<!-- Optional: BrettNummer-->
+<BoardNr>5001</BoardNr>
+<Job>
+<!-- unique ID for identification of this xml and its content, fixed length=9, numeric -->
+<UID>1541251</UID>
+<!-- Optional: customer order number, variable length, maximum digit count=10, numeric -->
+<Dsc>33600576</Dsc>
+<!-- Optional: manufacturing order nr -->
+<FertAufNr>12345678</FertAufNr>
+<!-- profil of cylinder core / Profil der Zylinder Kerne -->
+<Reference>E1359</Reference>
+<!-- Anlage number, only for display -->
+<SystemNum>EJYRHB</SystemNum>
+<CylNumber>MS01</CylNumber>
+<Info>BKS Key Serie Tandem E</Info>
+<!-- running number of the job, position on Brett -->
+<Running>1</Running>
+<!-- quantity of Cylinders to be manufactured with this job -->
+<Qty>500</Qty>
+<CylinderSpec PosSeq="1">
+<MontageInfo>SAP NR. 48207403°Seewassergesch.°Schließbart Niro°M5 x 80 MS-ZN</MontageInfo>
+<!-- material number --> 
+<MatNr>3101</MatNr>
+<NumberOfKeys>0</NumberOfKeys>
+<DiffClosing>0</DiffClosing>
+<Length Pos="1">31</Length>
+<Color Pos="1">N</Color>
+<!-- Zylinder Kerne --> 
+<Core>2</Core>
+<CylSide>1</CylSide>
+<Marking>1</Marking>
+<MontageAutomat>Y</MontageAutomat>
+</CylinderSpec>
+<Marking PosSeq="2">
+<Token Number="3">EJYRHB</Token>
+<Token Number="4">MS01</Token>
+<MetaDat>
+<AreaData Number="1">
+<Glasses>6</Glasses>
+<Side>2</Side>
+<Orientation>1</Orientation>
+<Direction>0</Direction>
+<SelfForm>0</SelfForm>
+<Rownumber Number="3">
+<Position>
+<Startpoint_xy>5.2;16.0</Startpoint_xy>
+<Endpoint_xy>20.1;18.0</Endpoint_xy>
+</Position>
+<Text>[T3]</Text>
+<Height>2</Height>
+<Align>1</Align>
+<Bold>0</Bold>
+<Font>MS5X7</Font>
+<Ratio>0.9</Ratio>
+</Rownumber>
+<Rownumber Number="4">
+<Position>
+<Startpoint_xy>5.2;12.5</Startpoint_xy>
+<Endpoint_xy>20.1;14.5</Endpoint_xy>
+</Position>
+<Text>[T4]</Text>
+<Height>2</Height>
+<Align>1</Align>
+<Bold>0</Bold>
+<Font>MS5X7</Font>
+<Ratio>0.9</Ratio>
+</Rownumber>
+</AreaData>
+</MetaDat>
+</Marking>
+<CylMontage PosSeq="3">
+<CylMontageSystem>BKS Key Serie Tandem E</CylMontageSystem>
+<DrillProtectionSideA>_ohne Bohrschutz</DrillProtectionSideA>
+<QtyPins>6</QtyPins>
+<Pin Pos="1">
+<CorePin>
+<Material>BR</Material>
+<PinSize>3</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PILZ</Form>
+<PinSize>4</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="2">
+<CorePin>
+<Material>BR</Material>
+<PinSize>0</PinSize>
+</CorePin>
+<HSDisc Pos="1">2</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PILZ</Form>
+<PinSize>4</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="3">
+<CorePin>
+<Material>BR</Material>
+<PinSize>3</PinSize>
+</CorePin>
+<BodyPin>
+<Material>MS</Material>
+<Form>PICK</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="4">
+<CorePin>
+<Material>BR</Material>
+<PinSize>0</PinSize>
+</CorePin>
+<HSDisc Pos="1">2</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PICK</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="5">
+<CorePin>
+<Material>BR</Material>
+<PinSize>2</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>ZYL</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="6">
+<CorePin>
+<Material>BR</Material>
+<PinSize>1</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<HSDisc Pos="2">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>ZYL</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+</CylMontage>
+</Job>
+<Job>
+<UID>1541251</UID>
+<Dsc>33600576</Dsc>
+<Reference>E1359</Reference>
+<SystemNum>EJYRHB</SystemNum>
+<CylNumber>MS01</CylNumber>
+<Info>BKS Key Serie Tandem E</Info>
+<Running>2</Running>
+<Qty>500</Qty>
+<CylinderSpec PosSeq="1">
+<MontageInfo>SAP NR. 48207403°Seewassergesch.°Schließbart Niro°M5 x 80 MS-ZN</MontageInfo>
+<MatNr>3101</MatNr>
+<NumberOfKeys>0</NumberOfKeys>
+<DiffClosing>0</DiffClosing>
+<Length Pos="1">31</Length>
+<Color Pos="1">N</Color>
+<Core>1</Core>
+<CylSide>1</CylSide>
+<Marking>1</Marking>
+<MontageAutomat>Y</MontageAutomat>
+</CylinderSpec>
+<Marking PosSeq="2">
+<Token Number="3">EJYRHB</Token>
+<Token Number="4">MS01</Token>
+<MetaDat>
+<AreaData Number="1">
+<Glasses>6</Glasses>
+<Side>2</Side>
+<Orientation>1</Orientation>
+<Direction>0</Direction>
+<SelfForm>0</SelfForm>
+<Rownumber Number="3">
+<Position>
+<Startpoint_xy>5.2;16.0</Startpoint_xy>
+<Endpoint_xy>20.1;18.0</Endpoint_xy>
+</Position>
+<Text>[T3]</Text>
+<Height>2</Height>
+<Align>1</Align>
+<Bold>0</Bold>
+<Font>MS5X7</Font>
+<Ratio>0.9</Ratio>
+</Rownumber>
+<Rownumber Number="4">
+<Position>
+<Startpoint_xy>5.2;12.5</Startpoint_xy>
+<Endpoint_xy>20.1;14.5</Endpoint_xy>
+</Position>
+<Text>[T4]</Text>
+<Height>2</Height>
+<Align>1</Align>
+<Bold>0</Bold>
+<Font>MS5X7</Font>
+<Ratio>0.9</Ratio>
+</Rownumber>
+</AreaData>
+</MetaDat>
+</Marking>
+<CylMontage PosSeq="3">
+<CylMontageSystem>BKS Key Serie Tandem E</CylMontageSystem>
+<DrillProtectionSideA>_ohne Bohrschutz</DrillProtectionSideA>
+<QtyPins>6</QtyPins>
+<Pin Pos="1">
+<CorePin>
+<Material>BR</Material>
+<PinSize>3</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PILZ</Form>
+<PinSize>4</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="2">
+<CorePin>
+<Material>BR</Material>
+<PinSize>0</PinSize>
+</CorePin>
+<HSDisc Pos="1">2</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PILZ</Form>
+<PinSize>4</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="3">
+<CorePin>
+<Material>BR</Material>
+<PinSize>3</PinSize>
+</CorePin>
+<BodyPin>
+<Material>MS</Material>
+<Form>PICK</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="4">
+<CorePin>
+<Material>BR</Material>
+<PinSize>0</PinSize>
+</CorePin>
+<HSDisc Pos="1">2</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PICK</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="5">
+<CorePin>
+<Material>BR</Material>
+<PinSize>2</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>ZYL</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="6">
+<CorePin>
+<Material>BR</Material>
+<PinSize>1</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<HSDisc Pos="2">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>ZYL</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+</CylMontage>
+</Job>
+<Job>
+<UID>1541251</UID>
+<Dsc>33600576</Dsc>
+<Reference>E1356</Reference>
+<SystemNum>EJYRHB</SystemNum>
+<CylNumber>K-S</CylNumber>
+<Info>BKS Key Serie Tandem E</Info>
+<Running>3</Running>
+<Qty>100</Qty>
+<CylinderSpec PosSeq="1">
+<MontageInfo>SAP NR. 48207401°Seewassergesch.°Schließbart Niro°M5 x 80 MS-ZN</MontageInfo>
+<MatNr>3101</MatNr>
+<NumberOfKeys>0</NumberOfKeys>
+<DiffClosing>0</DiffClosing>
+<Length Pos="1">31</Length>
+<Color Pos="1">N</Color>
+<Core>1</Core>
+<CylSide>1</CylSide>
+<Marking>1</Marking>
+<MontageAutomat>Y</MontageAutomat>
+</CylinderSpec>
+<Marking PosSeq="2">
+<Token Number="3">EJYRHB</Token>
+<Token Number="4">K-S</Token>
+<MetaDat>
+<AreaData Number="1">
+<Glasses>6</Glasses>
+<Side>2</Side>
+<Orientation>1</Orientation>
+<Direction>0</Direction>
+<SelfForm>0</SelfForm>
+<Rownumber Number="3">
+<Position>
+<Startpoint_xy>5.2;16.0</Startpoint_xy>
+<Endpoint_xy>20.1;18.0</Endpoint_xy>
+</Position>
+<Text>[T3]</Text>
+<Height>2</Height>
+<Align>1</Align>
+<Bold>0</Bold>
+<Font>MS5X7</Font>
+<Ratio>0.9</Ratio>
+</Rownumber>
+<Rownumber Number="4">
+<Position>
+<Startpoint_xy>5.2;12.5</Startpoint_xy>
+<Endpoint_xy>20.1;14.5</Endpoint_xy>
+</Position>
+<Text>[T4]</Text>
+<Height>2</Height>
+<Align>1</Align>
+<Bold>0</Bold>
+<Font>MS5X7</Font>
+<Ratio>0.9</Ratio>
+</Rownumber>
+</AreaData>
+</MetaDat>
+</Marking>
+<CylMontage PosSeq="3">
+<CylMontageSystem>BKS Key Serie Tandem E</CylMontageSystem>
+<DrillProtectionSideA>_ohne Bohrschutz</DrillProtectionSideA>
+<QtyPins>6</QtyPins>
+<Pin Pos="1">
+<CorePin>
+<Material>BR</Material>
+<PinSize>3</PinSize>
+</CorePin>
+<HSDisc Pos="1">2</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PILZ</Form>
+<PinSize>4</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="2">
+<CorePin>
+<Material>BR</Material>
+<PinSize>0</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PILZ</Form>
+<PinSize>4</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="3">
+<CorePin>
+<Material>BR</Material>
+<PinSize>3</PinSize>
+</CorePin>
+<BodyPin>
+<Material>MS</Material>
+<Form>PICK</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="4">
+<CorePin>
+<Material>BR</Material>
+<PinSize>0</PinSize>
+</CorePin>
+<HSDisc Pos="1">2</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>PICK</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="5">
+<CorePin>
+<Material>BR</Material>
+<PinSize>2</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>ZYL</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+<Pin Pos="6">
+<CorePin>
+<Material>BR</Material>
+<PinSize>1</PinSize>
+</CorePin>
+<HSDisc Pos="1">1</HSDisc>
+<HSDisc Pos="2">1</HSDisc>
+<BodyPin>
+<Material>MS</Material>
+<Form>ZYL</Form>
+<PinSize>5</PinSize>
+</BodyPin>
+</Pin>
+</CylMontage>
+</Job>
+</Telegram>
+</Root>

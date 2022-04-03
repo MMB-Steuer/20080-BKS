@@ -25,7 +25,7 @@ namespace MMBServer
             _socketServer = SocketServer.getInstance();
             this.startSocketServer();
             MMBConfig _config = MMBConfig.getInstance();
-            
+            FileLogger fl = new FileLogger(FileLogger._INFORMATION, "MMBServer Start");
 
         }
         // Socket Server Starten

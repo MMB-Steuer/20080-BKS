@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Odbc;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -74,11 +75,20 @@ namespace MMBServer
         {
             this.DbConnection.Open();
             this.DbCommand = DbConnection.CreateCommand();
+            try
+            {
 
-            DbCommand.CommandText = cmd;
-            this.DbReader = DbCommand.ExecuteReader();
 
+                DbCommand.CommandText = cmd;
+                this.DbReader = DbCommand.ExecuteReader();
+
+            }catch (Exception ex)
+            {
+                new FileLogger(FileLogger._EXCEPTION, cmd);
+                new FileLogger(FileLogger._EXCEPTION, ex.StackTrace);
+            }
             return DbReader;
+
         }
         public void ExecuteNonQuery(string cmd)
         {
@@ -92,7 +102,8 @@ namespace MMBServer
             }
             catch (Exception ex)
             {
-                Console.Write(ex);
+                new FileLogger(FileLogger._EXCEPTION, cmd);
+                new FileLogger(FileLogger._EXCEPTION, ex.StackTrace);
             }
         }
         public void dispose()

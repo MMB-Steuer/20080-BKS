@@ -35,25 +35,27 @@ namespace MMBServer
 
         public string sendMessage(byte[] data)
         {
+            new FileLogger(FileLogger._INFORMATION, "data send: " + data.Length);
             this.con = new TcpClient(this.serverpath, Int32.Parse(this.serverport));
             if (this.isinitialized == false)
             {
                 throw new Exception("Not Initialized");
             }
-            Console.WriteLine("data to Server: " + data.Length);
             NetworkStream stream = this.con.GetStream();
             var sizeBuffer = BitConverter.GetBytes((int)data.Length);
             var buffer = new byte[sizeBuffer.Length + data.Length];
             sizeBuffer.CopyTo(buffer, 0);
             data.CopyTo(buffer, sizeBuffer.Length);
             stream.Write(buffer, 0, buffer.Length);
-            Console.WriteLine("buffer to Server: " + buffer.Length);
-            Console.WriteLine("data to Server: " + data.Length);
+
             var lengthBuffer = new byte[4];
+            
             stream.Read(lengthBuffer, 0, 4);
+            
             var length = BitConverter.ToInt32(lengthBuffer, 0);
             buffer = new byte[length];
             int totalReadyBytes = 0;
+            
             while (true)
             {
                 var readBytes = stream.Read(buffer, totalReadyBytes, buffer.Length - totalReadyBytes);
@@ -67,14 +69,14 @@ namespace MMBServer
                     break;
                 }
             }
-
+            new FileLogger(FileLogger._INFORMATION, "receive length: " + buffer.Length);
             string text = System.Text.UTF8Encoding.UTF8.GetString(buffer);
             stream.Close();
             this.con.Close();
             this.con = null;
-            Console.WriteLine(text);
-            
+                            
             LogService.getInstance().create(LogService._INFORMATION, text);
+
             return text;
         }
 
