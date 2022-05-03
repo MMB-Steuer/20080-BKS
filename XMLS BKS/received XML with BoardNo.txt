@@ -1,0 +1,1367 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Root>
+  <Version>5</Version>
+  <Telegram Name="ManufactoringData">
+    <BoardNr>8017</BoardNr>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101534</SystemNum>
+      <CylNumber>2A101534</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>1</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101534</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>416144</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>11</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101534</SystemNum>
+      <CylNumber>2A101534</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>1</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">31</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>416144</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>11</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101535</SystemNum>
+      <CylNumber>2A101535</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>2</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101535</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>513922</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101535</SystemNum>
+      <CylNumber>2A101535</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>2</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">31</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>513922</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101536</SystemNum>
+      <CylNumber>2A101536</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>3</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101536</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>50118a</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101536</SystemNum>
+      <CylNumber>2A101536</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>3</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">31</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>50118a</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101537</SystemNum>
+      <CylNumber>2A101537</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>4</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101537</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>177868</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101537</SystemNum>
+      <CylNumber>2A101537</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>4</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">31</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>177868</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101538</SystemNum>
+      <CylNumber>2A101538</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>5</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101538</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>045696</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101538</SystemNum>
+      <CylNumber>2A101538</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>5</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">31</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>045696</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101539</SystemNum>
+      <CylNumber>2A101539</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>6</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101539</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>123644</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101539</SystemNum>
+      <CylNumber>2A101539</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>6</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">35</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>123644</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101540</SystemNum>
+      <CylNumber>2A101540</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>7</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101540</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>404130</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101540</SystemNum>
+      <CylNumber>2A101540</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>7</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">35</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>404130</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101541</SystemNum>
+      <CylNumber>2A101541</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>8</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101541</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>799485</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>3</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101541</SystemNum>
+      <CylNumber>2A101541</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>8</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">35</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>799485</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>3</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101542</SystemNum>
+      <CylNumber>2A101542</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>9</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101542</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>34794a</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>3</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101542</SystemNum>
+      <CylNumber>2A101542</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>9</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">35</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>34794a</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>3</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101543</SystemNum>
+      <CylNumber>2A101543</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>10</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="1">31</Length>
+        <Color Pos="1">N</Color>
+        <Core>2</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3612 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101543</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Gefahrenfunktion_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>375670</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101543</SystemNum>
+      <CylNumber>2A101543</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>10</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Doppelzylinder°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°CK1367</MontageInfo>
+        <MatNr>3612</MatNr>
+        <DiffClosing>1</DiffClosing>
+        <Length Pos="2">35</Length>
+        <Color Pos="2">N</Color>
+        <Core>2</Core>
+        <CylSide>2</CylSide>
+        <Marking>0</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>375670</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101544</SystemNum>
+      <CylNumber>2A101544</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>11</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">35</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101544</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>25a514</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>3</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101545</SystemNum>
+      <CylNumber>2A101545</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>12</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">35</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101545</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>204470</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>11</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101546</SystemNum>
+      <CylNumber>2A101546</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>13</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">35</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101546</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>683965</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101547</SystemNum>
+      <CylNumber>2A101547</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>14</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">35</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101547</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>651168</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101548</SystemNum>
+      <CylNumber>2A101548</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>15</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">35</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101548</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>836344</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>11</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101549</SystemNum>
+      <CylNumber>2A101549</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>16</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">27</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101549</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>828203</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101550</SystemNum>
+      <CylNumber>2A101550</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>17</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">27</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101550</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>326599</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>11</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101551</SystemNum>
+      <CylNumber>2A101551</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>18</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">27</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101551</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>477126</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101552</SystemNum>
+      <CylNumber>2A101552</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>19</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">27</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101552</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>647626</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>7</SL>
+    </Job>
+    <Job>
+      <UID>1824128</UID>
+      <Dsc>34008190</Dsc>
+      <Reference>CK1367</Reference>
+      <SystemNum>2A101553</SystemNum>
+      <CylNumber>2A101553</CylNumber>
+      <Info>BKS Key Serie 36</Info>
+      <Running>20</Running>
+      <Qty>1</Qty>
+      <CylinderSpec PosSeq="1">
+        <MontageInfo>BS -A°SL rechts°0°Profil-Handhabendoppelzyl°Sicherungskarte°Orange Kugel°0°VLK-A Zyl.°SL°BKS-Design-Knauf°Nickel°/N°CK1367</MontageInfo>
+        <MatNr>3606</MatNr>
+        <DiffClosing>0</DiffClosing>
+        <Length Pos="1">27</Length>
+        <Color Pos="1">N</Color>
+        <Core>1</Core>
+        <CylSide>1</CylSide>
+        <Marking>1</Marking>
+        <MontageAutomat>Y</MontageAutomat>
+      </CylinderSpec>
+      <Marking PosSeq="2">
+        <Template ProgramName="XZS075007_TZ2" ProgramId="11" Location="ZYLINDER_1">
+          <Text Number="1">3606 SL</Text>
+          <Text Number="2"></Text>
+          <Text Number="3">2A101553</Text>
+          <Text Number="4"></Text>
+          <Text Number="5"></Text>
+          <Text Number="6"></Text>
+          <Text Number="7"></Text>
+          <Barcode Number="8">https://g-u.com/nuv</Barcode>
+          <Text Number="9">{ ProductionDate }</Text>
+          <Text Number="10">BKS GmbH, Heidestr. 71, 42549 Velbert</Text>
+          <Logo Number="11">Icon_Aussenseite_schwarz</Logo>
+          <Logo Number="12">Icon_vlk_schwarz</Logo>
+          <Logo Number="13">Icon_Patent_schwarz</Logo>
+          <Logo Number="14">Icon_Bohrschutz-Aussen_schwarz</Logo>
+          <Logo Number="15"></Logo>
+          <Logo Number="16"></Logo>
+        </Template>
+      </Marking>
+      <CopyProtection>1</CopyProtection>
+      <Modular>0</Modular>
+      <MetaProductName>SL</MetaProductName>
+      <NoOfKeys>5</NoOfKeys>
+      <Schneide>38123a</Schneide>
+      <KeyProfile>CK1367</KeyProfile>
+      <AuftragForm>N</AuftragForm>
+      <AKZ></AKZ>
+      <StartTermin></StartTermin>
+      <OperatingInstructions></OperatingInstructions>
+      <SL>5</SL>
+    </Job>
+  </Telegram>
+</Root>

@@ -69,11 +69,10 @@ namespace MMBServer
                             this.stream.ReadTimeout = 15000;
                             this.stream.Read(buffer, 0, _config.MMBtcpPackageSize);
                             string UID = System.Text.ASCIIEncoding.ASCII.GetString(buffer, _config.MmbtcpPackageOffSetUID, _config.MmbtcpPackageLengthUID);
-                            new FileLogger(FileLogger._DEBUG, "received CMD: " + buffer[0] + " | Count: " + buffer[_config.MmbtcpPackageOffSetCount] + " | pw: " + _config.PersonalPassword + " | user: " + _config.PersonalNumber + " | uid: " + UID);
+                            //new FileLogger(FileLogger._DEBUG, "received CMD: " + buffer[0] + " | Count: " + buffer[_config.MmbtcpPackageOffSetCount] + " | pw: " + _config.PersonalPassword + " | user: " + _config.PersonalNumber + " | uid: " + UID);
 
                             _config.PersonalNumber = System.Text.ASCIIEncoding.ASCII.GetString(buffer, 12, 10).Trim();
                             _config.PersonalPassword = System.Text.ASCIIEncoding.ASCII.GetString(buffer, 22, 10).Trim();
-                            Console.WriteLine("CMD: " + buffer[0] + " | Count: " + buffer[_config.MmbtcpPackageOffSetCount] +  " | pw: " + _config.PersonalPassword  + " | user: " + _config.PersonalNumber + " | uid: " + UID);
                             //LogService.getInstance().create(LogService._INFORMATION, "CMD: " + buffer[0] + " | Count: " + buffer[_config.MmbtcpPackageOffSetCount] + " | pw: " + _config.PersonalPassword + " | user: " + _config.PersonalNumber + " | uid: " + UID);
                             //buffer[0] = (byte)1;
                             if (lastCMD != buffer[0] || lastUID != UID)
@@ -102,7 +101,7 @@ namespace MMBServer
                             // Counter erhöhen
                             this.buffer[_config.MmbtcpPackageOffSetCount] = (byte)(this.buffer[_config.MmbtcpPackageOffSetCount] + 1);
                             this.stream.Write(buffer, 0, _config.MMBtcpPackageSize);
-                            new FileLogger(FileLogger._DEBUG, "send CMD: " + buffer[0] + " | Count: " + buffer[_config.MmbtcpPackageOffSetCount] + " | pw: " + _config.PersonalPassword + " | user: " + _config.PersonalNumber + " | uid: " + UID);
+                            //new FileLogger(FileLogger._DEBUG, "send CMD: " + buffer[0] + " | Count: " + buffer[_config.MmbtcpPackageOffSetCount] + " | pw: " + _config.PersonalPassword + " | user: " + _config.PersonalNumber + " | uid: " + UID);
 
                             buffer = this.resetData(buffer);
                         }
@@ -119,6 +118,9 @@ namespace MMBServer
                         catch (Exception ex)
                         {
                             new FileLogger(FileLogger._EXCEPTION, ex.ToString());
+                            new FileLogger(FileLogger._EXCEPTION, ex.StackTrace);
+                            new FileLogger(FileLogger._EXCEPTION, ex.InnerException.ToString());
+
                             LogService.getInstance().create(ex);
                             listner.Stop();
                             listner = null;
@@ -133,6 +135,7 @@ namespace MMBServer
             catch (Exception ex)
             {
                 LogService.getInstance().create(ex);
+                
             }
         }
 
@@ -215,13 +218,13 @@ namespace MMBServer
                 {
                     isOk = false;
                 }
-
                 // Jeden Job im XML durch itterieren
                 foreach (ManufactoringJob j in list)
                 {
                     try
                     {
                         new FileLogger(FileLogger._DEBUG, j.Dsc + " saved in progress");
+                        if (x.UID.ToString().Trim().Length <= 4) j.BoardNr = x.UID;
                         j.save();
                         //new FileLogger(FileLogger._DEBUG, j.Dsc + " saved");
                         // Job in Datanbank schreiben
@@ -239,10 +242,16 @@ namespace MMBServer
             catch (FormatException ex)
             {
                 new FileLogger(FileLogger._EXCEPTION, ex.ToString());
+                new FileLogger(FileLogger._EXCEPTION, ex.ToString());
+                new FileLogger(FileLogger._EXCEPTION, ex.StackTrace);
+                new FileLogger(FileLogger._EXCEPTION, ex.InnerException.ToString());
             }
             catch (Exception ex)
             {
                 new FileLogger(FileLogger._EXCEPTION, ex.ToString());
+                new FileLogger(FileLogger._EXCEPTION, ex.ToString());
+                new FileLogger(FileLogger._EXCEPTION, ex.StackTrace);
+                new FileLogger(FileLogger._EXCEPTION, ex.InnerException.ToString());
                 Console.WriteLine(ex);
             }
             if (isOk == true)
@@ -261,19 +270,13 @@ namespace MMBServer
         {
             MMBConfig _config = MMBConfig.getInstance();
             LogService.getInstance().create(LogService._INFORMATION, "SocketServer.JobFinished", "");
-            //SocketClient socket;
             new FileLogger(FileLogger._INFORMATION, "JobFinished");
             bool isOk = true;
             try
             {
                 List<ManufactoringJob> list = ManufactoringJob.getAllJobs();
                 int UID = int.Parse(this.receiveUID(buffer));
-                Console.WriteLine("UID" + UID);
-                Console.WriteLine("UID" + UID);
-                Console.WriteLine("UID" + UID);
-                Console.WriteLine("UID" + UID);
-                Console.WriteLine("UID" + UID);
-                Console.WriteLine("UID" + UID);
+
                 var _version = _config.XMLVersion;
                 var _communicationUser = _config.KommunikationUser;
                 var _communicationPassword = _config.KommunikationPassword;
@@ -322,8 +325,15 @@ namespace MMBServer
                 telegrammNode.AppendChild(StatusNode);
 
                 int r = 0;
-                list.FindAll(job => job.UID.ToString() == UID.ToString()).ForEach(job => {
-//                    list.ForEach(job => { 
+                if (UID.ToString().Length <= 4)
+                {
+                    list.FindAll(job => job.Dsc.ToString().Trim() == UID.ToString());
+                }
+                else
+                {
+                    list.FindAll(job => job.BoardNr.ToString().Trim() == UID.ToString());
+                }
+                list.ForEach(job => {
                     r++;
                     int verbleibend = 0;
                     int Quantity = job.Quantity != null ? (int)job.Quantity : 0;
@@ -402,10 +412,11 @@ namespace MMBServer
                     XmlNode QtyWorkNode = xml.CreateElement("QtyWork");
                     QtyWorkNode.InnerText = job.Qty == null ? "0" : job.Qty.ToString();
                     StatusNode.AppendChild(QtyWorkNode);
+                    job.delete();
 
                 });
-                Console.WriteLine(xml.OuterXml);
-
+                new FileLogger(FileLogger._DEBUG, xml.OuterXml);
+                new FileLogger(FileLogger._DEBUG, UID.ToString());
                 /* byte[] data = Encoding.Default.GetBytes(xml.OuterXml);
                  SocketClient socket = SocketClient.getInstance();
                  socket.initCon(_config.XMLServerAdress, _config.XMLSeverPort.ToString());

@@ -415,6 +415,8 @@ namespace MMBServer
         private int? qtyWork = null;
         private int? bLA = null;
         private int? bLB = null;
+        private int? boardNr = null;
+        private int? coreCount = null;
 
         public int? ID { get => iD; set => iD = value; }
         public int? UID { get => uID; set => uID = value; }
@@ -436,6 +438,8 @@ namespace MMBServer
         public string StatusCode { get => statusCode; set => statusCode = value; }
         public int? BLA { get => bLA; set => bLA = value; }
         public int? BLB { get => bLB; set => bLB = value; }
+        public int? BoardNr { get; set; }
+        public int? CoreCount { get; set; }
         #endregion
 
         #region XML Generation
@@ -663,9 +667,20 @@ namespace MMBServer
                 foreach (XmlNode node2 in spec.SelectNodes("Length"))
                 {
                     c = c + 1;
-                    if (c== 1)
+                    try
                     {
-                        BLA = Int32.Parse(node2.InnerText);
+                        if (c == 1)
+                        {
+                            BLA = Int32.Parse(node2.InnerText);
+                        }
+                        if (c == 2)
+                        {
+                            BLB = Int32.Parse(node2.InnerText);
+                        }
+                    }catch(Exception ex)
+                    {
+                        new FileLogger(FileLogger._INFORMATION, "C : " + c.ToString());
+                        new FileLogger(FileLogger._INFORMATION, "BLA: " + node2.InnerText);
                     }
                 }
                 ManufactoringJob item = new ManufactoringJob();
@@ -678,6 +693,7 @@ namespace MMBServer
                 item.Qty = Qty * Core;
                 item.Quantity = Quantity;
                 item.JobCreationDate = JobCreationDate;
+                item.CoreCount = Core;
                 if (BLA >= 0) {  item.BLA = BLA; }
                 if (BLB >= 0) {  item.BLB = BLB; }
 
@@ -777,7 +793,12 @@ namespace MMBServer
                     j.StatusCode = dbreader.GetString(dbreader.GetOrdinal("StatusCode"));
                 }
                 catch (Exception Ex) { }
-   
+
+                try
+                {
+                    j.BoardNr = dbreader.GetInt32(dbreader.GetOrdinal("BoardNo"));
+                }catch(Exception Ex
+                ) { }
                 list.Add(j);
             }
             con.dispose();
@@ -957,7 +978,7 @@ namespace MMBServer
             string cmd = "Insert into Jobs (UID, Reference,SystemNum," +
                 "CyclNumber,Dsc,Qty," +
                 "Error,Running,CustomerInfo,JobCreationDate,JobCompletedDate," +
-                "JobStartDate,JobFinishDate,Quantity,StatusCode, BLA, BLB) VALUES (";
+                "JobStartDate,JobFinishDate,Quantity,StatusCode, BLA, BLB, BoardNo, CoreCount) VALUES (";
             if (this.UID != null)
             {
                 cmd += this.UID + " , ";
@@ -1105,9 +1126,25 @@ namespace MMBServer
             //BLB
             if (this.BLB != null)
             {
-                cmd += "'" + this.BLB + "' ";
+                cmd += "'" + this.BLB + "', ";
             }
             else
+            {
+                cmd += "null, ";
+            }
+            //BoardNo
+            if (this.BoardNr != null)
+            {
+                cmd += "'" + this.BoardNr + "', ";
+            }else
+            {
+                cmd += "null, ";
+            }
+            // CoreCount
+            if (this.CoreCount != null)
+            {
+                cmd += "'" + this.CoreCount + "' ";
+            }else
             {
                 cmd += "null ";
             }
